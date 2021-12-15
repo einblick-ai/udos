@@ -1,0 +1,139 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Provides the following options for simplifying text columns:\n - **Casing**: convert a column to uppercase or lowercase\n - **Remove stop words**: remove uninformative (\"stop\") words (e.g. `the`, `is`)\n - **Stem words**: remove endings from words to produce stem roots (e.g. `singing` to `sing`)\n - **Remove punctuation**\n - **Sort alphabetically**: sort all words in a column alphabetically\n - **Normalize**: apply NFC normalization to the text",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "columns": {
+                "Name": "columns",
+                "FromDataframe": "input",
+                "DisplayName": "columns",
+                "MaxNr": -1,
+                "MinNr": 1,
+                "AllowNumeric": false,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "casing": {
+                "DisplayName": "casing",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "none",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "lowercase",
+                            "DisplayName": "lowercase"
+                        },
+                        {
+                            "Key": "uppercase",
+                            "DisplayName": "uppercase"
+                        },
+                        {
+                            "Key": "none",
+                            "DisplayName": "none"
+                        }
+                    ]
+                }
+            },
+            "remove stop words": {
+                "DisplayName": "remove stop words",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            },
+            "stem words": {
+                "DisplayName": "stem words",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            },
+            "remove punctuation": {
+                "DisplayName": "remove punctuation",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            },
+            "sort alphabetically": {
+                "DisplayName": "sort alphabetically",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            },
+            "normalize": {
+                "DisplayName": "normalize",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            },
+            "truncate length": {
+                "DisplayName": "truncate length",
+                "__discriminator": "NumberValueInputDescription",
+                "DefaultValue": 0,
+                "MaxValue": 10000,
+                "MinValue": 0
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "columns",
+            "AttributeConfigGroupInputName": "columns",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "casing",
+            "ValueInputName": "casing",
+            "Icon": "fas fa-tag",
+            "__discriminator": "ValueSelectorInputUIType"
+        },
+        {
+            "Id": "remove stop words",
+            "ValueInputName": "remove stop words",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        },
+        {
+            "Id": "stem words",
+            "ValueInputName": "stem words",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        },
+        {
+            "Id": "remove punctuation",
+            "ValueInputName": "remove punctuation",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        },
+        {
+            "Id": "sort alphabetically",
+            "ValueInputName": "sort alphabetically",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        },
+        {
+            "Id": "normalize",
+            "ValueInputName": "normalize",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        },
+        {
+            "Id": "truncate length",
+            "ValueInputName": "truncate length",
+            "Icon": "fas fa-tag",
+            "__discriminator": "NumberValueInputUIType"
+        }
+    ]
+}

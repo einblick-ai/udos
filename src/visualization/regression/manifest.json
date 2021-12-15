@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Perform linear regression on a dataset",
+    "Tags": null,
+    "Thumbnail": "thumbnail.png"
+}

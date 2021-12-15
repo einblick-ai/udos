@@ -1,0 +1,76 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 800,
+    "height": 500,
+    "projection": {
+        "type": "albersUsa"
+    },
+    "data": {
+        "values": []
+    },
+    "layer": [
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/ezg/topojson/main/us-10m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "states"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "#333",
+                "stroke": "#bbb"
+            }
+        },
+        {
+            "layer": [
+                {
+                    "mark": {
+                        "type": "circle"
+                    },
+                    "selection": "SELECT_STORE"
+                }
+            ],
+            "encoding": {
+                "longitude": {
+                    "field": "attributes['longitude'][0]",
+                    "type": "quantitative"
+                },
+                "latitude": {
+                    "field": "attributes['latitude'][0]",
+                    "type": "quantitative"
+                },
+                "size": {
+                    "field": "attributes['size'][0]",
+                    "type": "quantitative"
+                },
+                "color": {
+                    "condition": {
+                        "test": {
+                            "selection": "select"
+                        },
+                        "value": "white"
+                    },
+                    "value": "#82a8d9"
+                }
+            }
+        }
+    ],
+    "config": {
+        "background": "none",
+        "axis": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff"
+        },
+        "legend": {
+            "labelColor": "#ffffff",
+            "titleColor": "#ffffff",
+            "labelFontSize": 12,
+            "titleFontSize": 14
+        },
+        "view": {
+            "stroke": "transparent"
+        }
+    }
+}

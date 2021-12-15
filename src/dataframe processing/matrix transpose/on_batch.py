@@ -1,0 +1,1 @@
+return df[attributes["attributes"]].transpose().reset_index()

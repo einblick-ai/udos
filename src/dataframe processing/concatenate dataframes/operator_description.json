@@ -1,0 +1,81 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Concatenate two dataframes. When concatenating horizontally, prefixes are only added to distinguish between identically-named columns unless `suffix all` is indicated.",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "first",
+                "DisplayName": "first"
+            },
+            {
+                "Name": "second",
+                "DisplayName": "second"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {
+            "type": {
+                "DisplayName": "type",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "horizontal",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "horizontal",
+                            "DisplayName": "horizontal"
+                        },
+                        {
+                            "Key": "vertical",
+                            "DisplayName": "vertical"
+                        }
+                    ]
+                }
+            },
+            "first suffix": {
+                "DisplayName": "first suffix",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "_first"
+            },
+            "second suffix": {
+                "DisplayName": "second suffix",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "_second"
+            },
+            "suffix all": {
+                "DisplayName": "suffix all",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "type",
+            "ValueInputName": "type",
+            "__discriminator": "ValueSelectorInputUIType"
+        },
+        {
+            "Id": "first suffix",
+            "ValueInputName": "first suffix",
+            "__discriminator": "StringValueInputUIType"
+        },
+        {
+            "Id": "second suffix",
+            "ValueInputName": "second suffix",
+            "__discriminator": "StringValueInputUIType"
+        },
+        {
+            "Id": "suffix all",
+            "ValueInputName": "suffix all",
+            "__discriminator": "BooleanValueInputUIType"
+        }
+    ]
+}

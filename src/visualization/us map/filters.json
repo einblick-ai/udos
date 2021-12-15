@@ -1,0 +1,6 @@
+{
+    "filters": [
+        "attributes['lon'][0]",
+        "attributes['lat'][0]"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Benedetto J. Buratti",
+    "AuthorEmail": "bb@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Data manipulation operator to drop columns or rows based on % of NaNs and Infinity values",
+    "Tags": [],
+    "Thumbnail": "favicon.png"
+}

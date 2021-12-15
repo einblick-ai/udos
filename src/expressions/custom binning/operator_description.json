@@ -1,0 +1,30 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Assign rows of a dataframe to bins based on specified conditions.",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InnerInputs": [
+        {
+            "FromDataframe": "input",
+            "Name": "custom_binning",
+            "__discriminator": "CustomBinningInnerInputDescription"
+        }
+    ],
+    "InputUI": []
+}

@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Plot an attribute on a map of the USA based on latitudinal and longitudinal coordinates",
+    "Tags": null,
+    "Thumbnail": "thumbnail.png"
+}

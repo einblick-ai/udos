@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Returns the bottom N rows based on a numeric attribute",
+    "Tags": null,
+    "Thumbnail": "favicon.png"
+}

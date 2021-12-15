@@ -1,0 +1,76 @@
+{
+    "Width": 500,
+    "Height": 350,
+    "Description": "A map of the US with different points, indicated by latitude and longitude, marked by circles. The size of the circle at each location is determined by the magnitude of the chosen `size` column.",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "latitude": {
+                "Name": "latitude",
+                "FromDataframe": "input",
+                "DisplayName": "latitude",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            },
+            "longitude": {
+                "Name": "longitude",
+                "FromDataframe": "input",
+                "DisplayName": "longitude",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            },
+            "size": {
+                "Name": "size",
+                "FromDataframe": "input",
+                "DisplayName": "size",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {}
+    },
+    "InputUI": [
+        {
+            "Id": "latitude",
+            "AttributeConfigGroupInputName": "latitude",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "longitude",
+            "AttributeConfigGroupInputName": "longitude",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "size",
+            "AttributeConfigGroupInputName": "size",
+            "__discriminator": "AttributeSelectorInputUIType"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Benedetto Buratti",
+    "AuthorEmail": "bb@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Remove duplicates from a dataframe",
+    "Tags": null,
+    "Thumbnail": "favicon.png"
+}

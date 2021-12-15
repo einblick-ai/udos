@@ -1,0 +1,130 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "A simple pie chart.\n\n**Slices**: the attribute determining slice sizes\n\n**Labels**: the attribute determining slice labels\n\n**Slice Size** and **Color Gradient** controls how slice sizes and color gradients are determined.\n\n### Options:\n\n- **Nominal**: unordered\n- **Ordinal**: ordered, equal spacing\n- **Quantitative**: ordered, sized\n- **Temporal**: by date\n\nClick [here](https://vega.github.io/vega-lite/docs/type.html) for more details on type options.",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "slices": {
+                "Name": "slices",
+                "FromDataframe": "input",
+                "DisplayName": "slices",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            },
+            "labels": {
+                "Name": "labels",
+                "FromDataframe": "input",
+                "DisplayName": "labels",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "title": {
+                "DisplayName": "title",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "untitled"
+            },
+            "slice size type": {
+                "DisplayName": "slice size type",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "quantitative",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "nominal",
+                            "DisplayName": "nominal"
+                        },
+                        {
+                            "Key": "ordinal",
+                            "DisplayName": "ordinal"
+                        },
+                        {
+                            "Key": "quantitative",
+                            "DisplayName": "quantitative"
+                        },
+                        {
+                            "Key": "temporal",
+                            "DisplayName": "temporal"
+                        }
+                    ]
+                }
+            },
+            "color gradient type": {
+                "DisplayName": "color gradient type",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "nominal",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "nominal",
+                            "DisplayName": "nominal"
+                        },
+                        {
+                            "Key": "ordinal",
+                            "DisplayName": "ordinal"
+                        },
+                        {
+                            "Key": "quantitative",
+                            "DisplayName": "quantitative"
+                        },
+                        {
+                            "Key": "temporal",
+                            "DisplayName": "temporal"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "slices",
+            "AttributeConfigGroupInputName": "slices",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "labels",
+            "AttributeConfigGroupInputName": "labels",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "title",
+            "ValueInputName": "title",
+            "__discriminator": "StringValueInputUIType"
+        },
+        {
+            "Id": "slice size type",
+            "ValueInputName": "slice size type",
+            "__discriminator": "ValueSelectorInputUIType"
+        },
+        {
+            "Id": "color gradient type",
+            "ValueInputName": "color gradient type",
+            "__discriminator": "ValueSelectorInputUIType"
+        }
+    ]
+}

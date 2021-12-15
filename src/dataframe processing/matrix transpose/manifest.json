@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Return the transpose of a dataframe",
+    "Tags": null,
+    "Thumbnail": "favicon.png"
+}

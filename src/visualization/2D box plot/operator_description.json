@@ -1,0 +1,80 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "For each category in `categories`, a 1D box plot will be produced using the corresponding values in `values`.\n\nBy default, the whiskers of the box plot reach until up to 1.5 times the IQR, with points outside this range being indicated as outliers. This factor is adjustable through the `extent` option. Set `extent` to `min-max` to make the whiskers cover the full range of the data.",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "values": {
+                "Name": "values",
+                "FromDataframe": "input",
+                "DisplayName": "values",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            },
+            "categories": {
+                "Name": "categories",
+                "FromDataframe": "input",
+                "DisplayName": "categories",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "title": {
+                "DisplayName": "title",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "untitled"
+            },
+            "extent": {
+                "DisplayName": "extent",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "1.5"
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "values",
+            "AttributeConfigGroupInputName": "values",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "categories",
+            "AttributeConfigGroupInputName": "categories",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "title",
+            "ValueInputName": "title",
+            "__discriminator": "StringValueInputUIType"
+        },
+        {
+            "Id": "extent",
+            "ValueInputName": "extent",
+            "__discriminator": "StringValueInputUIType"
+        }
+    ]
+}
