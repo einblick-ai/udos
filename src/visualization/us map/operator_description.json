@@ -2,7 +2,7 @@
     "Width": 500,
     "Height": 350,
     "Description": "A map of the US with different points, indicated by latitude and longitude, marked by circles. The size of the circle at each location is determined by the magnitude of the chosen `size` column.",
-    "AutoExecuteOnChange": false,
+    "AutoExecuteOnChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
