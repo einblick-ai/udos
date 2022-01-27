@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": null,
+    "AuthorEmail": null,
+    "CompatibleWith": null,
+    "Deprecated": false,
+    "Description": "Performs dummification (also known as one-hot encoding) on a column.",
+    "Tags": null,
+    "Thumbnail": null
+}
