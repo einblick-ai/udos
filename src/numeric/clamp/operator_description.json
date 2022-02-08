@@ -1,0 +1,69 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Forces values in numeric columns to be within a specified range.",
+    "AutoExecuteOnChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "columns": {
+                "Name": "columns",
+                "FromDataframe": "input",
+                "DisplayName": "columns",
+                "MaxNr": -1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "min": {
+                "DisplayName": "min",
+                "__discriminator": "NumberValueInputDescription",
+                "DefaultValue": 0
+            },
+            "max": {
+                "DisplayName": "max",
+                "__discriminator": "NumberValueInputDescription",
+                "DefaultValue": 0
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "columns",
+            "AttributeConfigGroupInputName": "columns",
+            "When": "true",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "min",
+            "ValueInputName": "min",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "NumberValueInputUIType"
+        },
+        {
+            "Id": "max",
+            "ValueInputName": "max",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "NumberValueInputUIType"
+        }
+    ]
+}
