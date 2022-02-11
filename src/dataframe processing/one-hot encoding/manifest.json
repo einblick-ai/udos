@@ -1,8 +1,8 @@
 {
     "AllowSynchronization": true,
-    "Author": null,
-    "AuthorEmail": null,
-    "CompatibleWith": null,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Performs dummification (also known as one-hot encoding) on a column.",
     "Tags": null,
