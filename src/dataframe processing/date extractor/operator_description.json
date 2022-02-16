@@ -61,6 +61,11 @@
                 "__discriminator": "BooleanValueInputDescription",
                 "DefaultValue": true
             },
+            "include day of week": {
+                "DisplayName": "include day of week",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": true
+            },
             "include microsecond": {
                 "DisplayName": "include microsecond",
                 "__discriminator": "BooleanValueInputDescription",
@@ -70,11 +75,6 @@
                 "DisplayName": "include nanosecond",
                 "__discriminator": "BooleanValueInputDescription",
                 "DefaultValue": false
-            },
-            "include day of week": {
-                "DisplayName": "include day of week",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
             }
         }
     },
@@ -82,72 +82,81 @@
         {
             "Id": "columns",
             "AttributeConfigGroupInputName": "columns",
-            "When": "true",
             "Icon": "fas fa-bullseye",
             "__discriminator": "AttributeSelectorInputUIType"
         },
         {
-            "Id": "include year",
-            "ValueInputName": "include year",
-            "When": "true",
+            "Id": "include",
+            "DisplayName": "include",
             "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include month",
-            "ValueInputName": "include month",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include day",
-            "ValueInputName": "include day",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include hour",
-            "ValueInputName": "include hour",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include minute",
-            "ValueInputName": "include minute",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include second",
-            "ValueInputName": "include second",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include microsecond",
-            "ValueInputName": "include microsecond",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include nanosecond",
-            "ValueInputName": "include nanosecond",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
-        },
-        {
-            "Id": "include day of week",
-            "ValueInputName": "include day of week",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
+            "Inputs": [
+                {
+                    "Id": "include year",
+                    "ValueInputName": "include year",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include month",
+                    "ValueInputName": "include month",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include day",
+                    "ValueInputName": "include day",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include hour",
+                    "ValueInputName": "include hour",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include minute",
+                    "ValueInputName": "include minute",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include second",
+                    "ValueInputName": "include second",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include day of week",
+                    "ValueInputName": "include day of week",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include microsecond",
+                    "ValueInputName": "include microsecond",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                },
+                {
+                    "Id": "include nanosecond",
+                    "ValueInputName": "include nanosecond",
+                    "Icon": "fas fa-tag",
+                    "__discriminator": "BooleanValueInputUIType"
+                }
+            ],
+            "Sizes": [
+                0.11,
+                0.11,
+                0.11,
+                0.11,
+                0.11,
+                0.11,
+                0.11,
+                0.11,
+                0.11
+            ],
+            "__discriminator": "CompositeInputUIType"
         }
     ]
 }
