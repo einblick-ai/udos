@@ -34,7 +34,7 @@
             "delimiter": {
                 "DisplayName": "delimiter",
                 "__discriminator": "StringValueInputDescription",
-                "DefaultValue": " "
+                "DefaultValue": ""
             },
             "use regex": {
                 "DisplayName": "use regex",
