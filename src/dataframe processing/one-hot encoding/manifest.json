@@ -4,7 +4,7 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
-    "Description": "Performs dummification (also known as one-hot encoding) on a column.",
+    "Description": "Performs one-hot encoding (also known as dummification) on a column.",
     "Tags": null,
     "Thumbnail": null
 }

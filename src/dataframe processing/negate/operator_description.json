@@ -34,7 +34,7 @@
             "in place": {
                 "DisplayName": "in place",
                 "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": "_negated"
+                "DefaultValue": true
             }
         }
     },

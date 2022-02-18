@@ -1,6 +1,8 @@
 {
     "Width": 400,
     "Height": 300,
+    "MinWidth": 300,
+    "MinHeight": 250,
     "Description": "Performs one-hot encoding (also known as dummification) on a column.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
