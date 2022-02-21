@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Box plot for a single numeric attribute across multiple classes",
-    "Tags": null,
+    "Tags": ["visualization"],
     "Thumbnail": "thumbnail.png"
 }

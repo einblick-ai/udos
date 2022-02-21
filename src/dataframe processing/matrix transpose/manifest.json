@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Return the transpose of a dataframe",
-    "Tags": null,
+    "Tags": ["dataframe manipulation"],
     "Thumbnail": null
 }

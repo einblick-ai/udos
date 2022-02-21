@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "A simple pie chart",
-    "Tags": null,
+    "Tags": ["visualization"],
     "Thumbnail": "thumbnail.png"
 }

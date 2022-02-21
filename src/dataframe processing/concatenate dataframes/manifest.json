@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Concatenate two dataframes",
-    "Tags": null,
+    "Tags": ["dataframe manipulation"],
     "Thumbnail": null
 }

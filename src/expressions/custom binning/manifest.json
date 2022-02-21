@@ -4,7 +4,7 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
-    "Description": null,
-    "Tags": null,
+    "Description":  "Assign rows of a dataframe to bins based on specified conditions.",
+    "Tags": ["transformation"],
     "Thumbnail": null
 }
