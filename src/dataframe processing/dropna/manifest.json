@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Data manipulation operator to drop columns or rows based on % of NaNs and Infinity values",
-    "Tags": ["transformation"],
+    "Tags": ["data cleaning"],
     "Thumbnail": null
 }
