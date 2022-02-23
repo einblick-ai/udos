@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Forces values in numeric columns to be within a specified range.",
-    "Tags": null,
+    "Tags": ["numeric"],
     "Thumbnail": null
 }

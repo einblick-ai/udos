@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Computes the specified number of quantiles for a given numeric column. \n\nFor example, with 5 quantiles, the smallest value of the column will be in quantile 1, while the largest value will be in quantile 5.",
-    "Tags": null,
+    "Tags": ["numeric"],
     "Thumbnail": null
 }

@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Negates boolean attributes.",
-    "Tags": null,
+    "Tags": ["transformation"],
     "Thumbnail": null
 }

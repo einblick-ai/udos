@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Computes a statistic (e.g. *max*, *average*) for each row of a dataframe.",
-    "Tags": null,
+    "Tags": ["numeric"],
     "Thumbnail": null
 }

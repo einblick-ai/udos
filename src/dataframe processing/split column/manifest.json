@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Creates new columns (max 100) by splitting a specified text column by a given delimiter. Regex is supported.",
-    "Tags": null,
+    "Tags": ["transformation"],
     "Thumbnail": null
 }
