@@ -33,8 +33,8 @@
             }
         },
         "ValueInputDescription": {
-            "append columns": {
-                "DisplayName": "append columns",
+            "append": {
+                "DisplayName": "append",
                 "__discriminator": "BooleanValueInputDescription",
                 "DefaultValue": true
             }
@@ -49,8 +49,8 @@
             "__discriminator": "AttributeSelectorInputUIType"
         },
         {
-            "Id": "append columns",
-            "ValueInputName": "append columns",
+            "Id": "append",
+            "ValueInputName": "append",
             "When": "true",
             "Icon": "fas fa-tag",
             "__discriminator": "BooleanValueInputUIType"
