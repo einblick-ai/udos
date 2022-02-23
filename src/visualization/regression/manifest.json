@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Perform linear regression on a dataset",
-    "Tags": null,
+    "Tags": ["visualization"],
     "Thumbnail": "thumbnail.png"
 }

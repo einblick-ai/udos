@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Create a word cloud based on a text attribute",
-    "Tags": null,
+    "Tags": ["visualization"],
     "Thumbnail": "thumbnail.png"
 }

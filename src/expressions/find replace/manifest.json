@@ -4,7 +4,7 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
-    "Description": null,
-    "Tags": null,
+    "Description":  "Find instances of character sequences in a text column and replace them with other sequences.",
+    "Tags": ["text"],
     "Thumbnail": null
 }

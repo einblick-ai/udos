@@ -5,6 +5,6 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Remove duplicates from a dataframe",
-    "Tags": null,
+    "Tags": ["data cleaning"],
     "Thumbnail": null
 }
