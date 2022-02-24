@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.0.0",
+    "Deprecated": false,
+    "Description": "Forces values in numeric columns to be within a specified range.",
+    "Tags": ["numeric"],
+    "Thumbnail": null
+}

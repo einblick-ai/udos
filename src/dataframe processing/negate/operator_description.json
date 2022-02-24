@@ -1,0 +1,57 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Negates boolean (true/false) columns.",
+    "AutoExecuteOnChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "columns": {
+                "Name": "columns",
+                "FromDataframe": "input",
+                "DisplayName": "columns",
+                "MaxNr": -1,
+                "MinNr": 1,
+                "AllowNumeric": false,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "in place": {
+                "DisplayName": "in place",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": true
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "columns",
+            "AttributeConfigGroupInputName": "columns",
+            "When": "true",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "in place",
+            "ValueInputName": "in place",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        }
+    ]
+}
