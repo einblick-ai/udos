@@ -3,6 +3,7 @@
     "Height": 400,
     "Description": "Generates a word cloud from a column of text.",
     "AutoExecuteOnChange": true,
+    "DisplayContentAtLowFidelity": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

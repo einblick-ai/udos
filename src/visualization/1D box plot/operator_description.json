@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "By default, the whiskers of the box plot reach until up to 1.5 times the IQR, with points outside this range being indicated as outliers. This factor is adjustable through the `extent` option. Set `extent` to `min-max` to make the whiskers cover the full range of the data.",
     "AutoExecuteOnChange": true,
+    "DisplayContentAtLowFidelity": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
