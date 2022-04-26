@@ -58,7 +58,7 @@
         }
     ],
     "config": {
-        "background": "none",
+        "background": "transparent",
         "axis": {
             "labelColor": "#ffffff",
             "titleColor": "#ffffff"
