@@ -5,7 +5,7 @@
     "data": {
         "values": []
     },
-    "mark": {"type": "boxplot", "extent": "params['extent']"},
+    "mark": { "type": "boxplot", "extent": "params['extent']" },
     "encoding": {
         "x": {
             "field": "attributes['target'][0]",
@@ -14,5 +14,8 @@
                 "zero": false
             }
         }
+    },
+    "config": {
+        "background": "white"
     }
 }

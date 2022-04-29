@@ -1,77 +1,92 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "data": {"values": []},
-  "layer": [
-    {
-      "mark": {"type": "point", "filled": true},
-      "encoding": {
-        "x": {"field": "attributes['x'][0]", "type": "quantitative"},
-        "y": {"field": "attributes['y'][0]", "type": "quantitative"}
-      }
-    },
-    {
-      "mark": {"type": "line", "color": "firebrick"},
-      "transform": [
-        {"regression": "attributes['x'][0]", "on": "attributes['y'][0]"}
-      ],
-      "encoding": {
-        "x": {"field": "attributes['x'][0]", "type": "quantitative"},
-        "y": {"field": "attributes['y'][0]", "type": "quantitative"}
-      }
-    },
-    {
-      "transform": [
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": { "values": [] },
+    "layer": [
         {
-          "regression": "attributes['y'][0]",
-          "on": "attributes['x'][0]",
-          "params": true
+            "mark": { "type": "point", "filled": true },
+            "encoding": {
+                "x": { "field": "attributes['x'][0]", "type": "quantitative" },
+                "y": { "field": "attributes['y'][0]", "type": "quantitative" }
+            }
         },
-        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
-      ],
-      "mark": {
-        "type": "text",
-        "color": "firebrick",
-        "x": "width",
-        "align": "right",
-        "y": -5
-      },
-      "encoding": {"text": {"type": "nominal", "field": "R2"}}
-    },
-    {
-      "transform": [
         {
-          "regression": "attributes['y'][0]",
-          "on": "attributes['x'][0]",
-          "params": true
+            "mark": { "type": "line", "color": "firebrick" },
+            "transform": [
+                {
+                    "regression": "attributes['x'][0]",
+                    "on": "attributes['y'][0]"
+                }
+            ],
+            "encoding": {
+                "x": { "field": "attributes['x'][0]", "type": "quantitative" },
+                "y": { "field": "attributes['y'][0]", "type": "quantitative" }
+            }
         },
-        {"calculate": "'Intercept: '+format(datum.coef[0], '.2f')", "as": "intercept"}
-      ],
-      "mark": {
-        "type": "text",
-        "color": "firebrick",
-        "x": "width",
-        "align": "right",
-        "y": -20
-      },
-      "encoding": {"text": {"type": "nominal", "field": "intercept"}}
-    },
-    {
-      "transform": [
         {
-          "regression": "attributes['y'][0]",
-          "on": "attributes['x'][0]",
-          "params": true
+            "transform": [
+                {
+                    "regression": "attributes['y'][0]",
+                    "on": "attributes['x'][0]",
+                    "params": true
+                },
+                {
+                    "calculate": "'R²: '+format(datum.rSquared, '.2f')",
+                    "as": "R2"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "color": "firebrick",
+                "x": "width",
+                "align": "right",
+                "y": -5
+            },
+            "encoding": { "text": { "type": "nominal", "field": "R2" } }
         },
-        {"calculate": "'Slope: '+format(datum.coef[1], '.2f')", "as": "slope"}
-      ],
-      "mark": {
-        "type": "text",
-        "color": "firebrick",
-        "x": "width",
-        "align": "right",
-        "y": -35
-      },
-      "encoding": {"text": {"type": "nominal", "field": "slope"}}
+        {
+            "transform": [
+                {
+                    "regression": "attributes['y'][0]",
+                    "on": "attributes['x'][0]",
+                    "params": true
+                },
+                {
+                    "calculate": "'Intercept: '+format(datum.coef[0], '.2f')",
+                    "as": "intercept"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "color": "firebrick",
+                "x": "width",
+                "align": "right",
+                "y": -20
+            },
+            "encoding": { "text": { "type": "nominal", "field": "intercept" } }
+        },
+        {
+            "transform": [
+                {
+                    "regression": "attributes['y'][0]",
+                    "on": "attributes['x'][0]",
+                    "params": true
+                },
+                {
+                    "calculate": "'Slope: '+format(datum.coef[1], '.2f')",
+                    "as": "slope"
+                }
+            ],
+            "mark": {
+                "type": "text",
+                "color": "firebrick",
+                "x": "width",
+                "align": "right",
+                "y": -35
+            },
+            "encoding": { "text": { "type": "nominal", "field": "slope" } }
+        }
+    ],
+    "config": {
+        "background": "white"
     }
-  ]
 }
