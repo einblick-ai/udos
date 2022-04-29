@@ -24,10 +24,13 @@
                 "zero": false
             }
         },
-         "color": {
+        "color": {
             "field": "attributes['categories'][0]",
             "type": "nominal",
             "legend": null
         }
+    },
+    "config": {
+        "background": "white"
     }
 }
