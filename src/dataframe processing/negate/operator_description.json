@@ -1,6 +1,6 @@
 {
-    "Width": 400,
-    "Height": 300,
+    "Width": 250,
+    "Height": 200,
     "Description": "Negates boolean (true/false) columns.",
     "AutoExecuteOnChange": true,
     "ComputationDescription": {
@@ -16,42 +16,27 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "columns": {
-                "Name": "columns",
-                "FromDataframe": "input",
-                "DisplayName": "columns",
-                "MaxNr": -1,
-                "MinNr": 1,
-                "AllowNumeric": false,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": true,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "in place": {
-                "DisplayName": "in place",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "columns",
-            "AttributeConfigGroupInputName": "columns",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "in place",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         },
         {
-            "Id": "in place",
-            "ValueInputName": "in place",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": true,
+            "AllowNull": false
         }
     ]
 }
