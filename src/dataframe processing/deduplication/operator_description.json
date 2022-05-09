@@ -1,5 +1,5 @@
 {
-    "Width": 400,
+    "Width": 350,
     "Height": 300,
     "Description": "Removes all (except one) duplicate rows of a dataframe, where duplicates are determined by the values in the selected columns.",
     "AutoExecuteOnChange": false,
@@ -16,27 +16,22 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "features": {
-                "Name": "features",
-                "FromDataframe": "input",
-                "DisplayName": "features",
-                "MaxNr": -1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": true,
-                "AllowTimestamps": true,
-                "AllowBooleans": true,
-                "AllowNull": true
-            }
-        },
+        "AttributeConfigGroupInputDescription": {},
         "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "features",
-            "AttributeConfigGroupInputName": "features",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "features",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": true,
+            "AllowTimestamps": true,
+            "AllowBooleans": true,
+            "AllowNull": true
         }
     ]
 }
