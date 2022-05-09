@@ -21,61 +21,34 @@
             }
         ],
         "AttributeConfigGroupInputDescription": {},
-        "ValueInputDescription": {
-            "type": {
-                "DisplayName": "type",
-                "__discriminator": "OptionsValueInputDescription",
-                "DefaultValue": "horizontal",
-                "Options": {
-                    "true": [
-                        {
-                            "Key": "horizontal",
-                            "DisplayName": "horizontal"
-                        },
-                        {
-                            "Key": "vertical",
-                            "DisplayName": "vertical"
-                        }
-                    ]
-                }
-            },
-            "first suffix": {
-                "DisplayName": "first suffix",
-                "__discriminator": "StringValueInputDescription",
-                "DefaultValue": "_first"
-            },
-            "second suffix": {
-                "DisplayName": "second suffix",
-                "__discriminator": "StringValueInputDescription",
-                "DefaultValue": "_second"
-            },
-            "suffix all": {
-                "DisplayName": "suffix all",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": false
-            }
-        }
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "type",
-            "ValueInputName": "type",
-            "__discriminator": "ValueSelectorInputUIType"
+            "Name": "type",
+            "__discriminator": "OptionSelectorInnerInputDescription",
+            "Options": [
+                "horizontal",
+                "vertical"
+            ],
+            "MaxNr": 1,
+            "MinNr": 1
         },
         {
-            "Id": "first suffix",
-            "ValueInputName": "first suffix",
-            "__discriminator": "StringValueInputUIType"
+            "Name": "first suffix",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": "_first"
         },
         {
-            "Id": "second suffix",
-            "ValueInputName": "second suffix",
-            "__discriminator": "StringValueInputUIType"
+            "Name": "second suffix",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": "_second"
         },
         {
-            "Id": "suffix all",
-            "ValueInputName": "suffix all",
-            "__discriminator": "BooleanValueInputUIType"
+            "Name": "suffix all",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": false
         }
     ]
 }

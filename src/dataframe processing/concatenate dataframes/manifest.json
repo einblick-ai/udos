@@ -5,6 +5,8 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Concatenate two dataframes",
-    "Tags": ["transformation"],
+    "Tags": [
+        "transformation"
+    ],
     "Thumbnail": null
 }
