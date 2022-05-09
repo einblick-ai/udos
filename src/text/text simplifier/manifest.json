@@ -5,6 +5,8 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Remove stop words and/or punctuation from text",
-    "Tags": ["text"],
+    "Tags": [
+        "text"
+    ],
     "Thumbnail": null
 }

@@ -4,9 +4,9 @@ import string
 truncate_length = int(params['truncate length'])
 
 for column in attributes['columns']:
-    if params['casing'] == "lowercase":
+    if params['casing'][0] == "lowercase":
         df[column] = df[column].str.lower()
-    elif params['casing'] == "uppercase": 
+    elif params['casing'][0] == "uppercase": 
         df[column] = df[column].str.upper()
 
     if params['remove stop words']:
