@@ -1,6 +1,6 @@
 {
-    "Width": 400,
-    "Height": 300,
+    "Width": 250,
+    "Height": 225,
     "Description": "Computes the specified number of quantiles for a given numeric column. \n\nFor example, with 5 quantiles, the smallest value of the column will be in quantile 0, while the largest value will be in quantile 4.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
@@ -16,44 +16,30 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "column": {
-                "Name": "column",
-                "FromDataframe": "input",
-                "DisplayName": "column",
-                "MaxNr": 1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": false,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "# quantiles": {
-                "DisplayName": "# quantiles",
-                "__discriminator": "NumberValueInputDescription",
-                "DefaultValue": 10,
-                "MaxValue": 1000,
-                "MinValue": 2
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "column",
-            "AttributeConfigGroupInputName": "column",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "column",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
-            "Id": "# quantiles",
-            "ValueInputName": "# quantiles",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "NumberValueInputUIType"
+            "Name": "# quantiles",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 10,
+            "MaxValue": 1000,
+            "MinValue": 2,
+            "AllowDecimals": false
         }
     ]
 }
