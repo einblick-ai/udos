@@ -5,6 +5,8 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Returns the bottom N rows based on a numeric attribute",
-    "Tags": ["transformation"],
+    "Tags": [
+        "transformation"
+    ],
     "Thumbnail": null
 }
