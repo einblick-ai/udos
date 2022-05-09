@@ -1,6 +1,6 @@
 {
-    "Width": 400,
-    "Height": 300,
+    "Width": 300,
+    "Height": 450,
     "Description": "Extract information such as the year, month, etc. from the date/time columns of a dataframe.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
@@ -16,147 +16,73 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "columns": {
-                "Name": "columns",
-                "FromDataframe": "input",
-                "DisplayName": "columns",
-                "MaxNr": -1,
-                "MinNr": 1,
-                "AllowNumeric": false,
-                "AllowStrings": false,
-                "AllowTimestamps": true,
-                "AllowBooleans": false,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "include year": {
-                "DisplayName": "include year",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include month": {
-                "DisplayName": "include month",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include day": {
-                "DisplayName": "include day",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include hour": {
-                "DisplayName": "include hour",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include minute": {
-                "DisplayName": "include minute",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include second": {
-                "DisplayName": "include second",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include day of week": {
-                "DisplayName": "include day of week",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "include microsecond": {
-                "DisplayName": "include microsecond",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": false
-            },
-            "include nanosecond": {
-                "DisplayName": "include nanosecond",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": false
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "columns",
-            "AttributeConfigGroupInputName": "columns",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": false,
+            "AllowTimestamps": true,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
-            "Id": "include",
-            "DisplayName": "include",
-            "Icon": "fas fa-tag",
-            "Inputs": [
-                {
-                    "Id": "include year",
-                    "ValueInputName": "include year",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include month",
-                    "ValueInputName": "include month",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include day",
-                    "ValueInputName": "include day",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include hour",
-                    "ValueInputName": "include hour",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include minute",
-                    "ValueInputName": "include minute",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include second",
-                    "ValueInputName": "include second",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include day of week",
-                    "ValueInputName": "include day of week",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include microsecond",
-                    "ValueInputName": "include microsecond",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                },
-                {
-                    "Id": "include nanosecond",
-                    "ValueInputName": "include nanosecond",
-                    "Icon": "fas fa-tag",
-                    "__discriminator": "BooleanValueInputUIType"
-                }
-            ],
-            "Sizes": [
-                0.11,
-                0.11,
-                0.11,
-                0.11,
-                0.11,
-                0.11,
-                0.11,
-                0.11,
-                0.11
-            ],
-            "__discriminator": "CompositeInputUIType"
+            "Name": "include year",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
+        },
+        {
+            "Name": "include month",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
+        },
+        {
+            "Name": "include day",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true,
+            "Options": [
+                null
+            ]
+        },
+        {
+            "Name": "include hour",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
+        },
+        {
+            "Name": "include minute",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
+        },
+        {
+            "Name": "include second",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
+        },
+        {
+            "Name": "include microsecond",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": false
+        },
+        {
+            "Name": "include nanosecond",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": false,
+            "Options": [
+                null
+            ]
+        },
+        {
+            "Name": "include day of week",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         }
     ]
 }
