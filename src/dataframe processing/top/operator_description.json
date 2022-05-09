@@ -1,6 +1,6 @@
 {
-    "Width": 225,
-    "Height": 150,
+    "Width": 250,
+    "Height": 200,
     "Description": "Select the `n` rows of a dataframe with the highest values of the selected column.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
@@ -16,38 +16,27 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "target": {
-                "Name": "target",
-                "FromDataframe": "input",
-                "DisplayName": "target",
-                "MaxNr": 1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": true,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "# rows": {
-                "DisplayName": "# rows",
-                "__discriminator": "NumberValueInputDescription",
-                "DefaultValue": 10
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "target",
-            "AttributeConfigGroupInputName": "target",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "target",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": true,
+            "AllowNull": false
         },
         {
-            "Id": "# rows",
-            "ValueInputName": "# rows",
-            "__discriminator": "NumberValueInputUIType"
+            "Name": "# rows",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 10
         }
     ]
 }
