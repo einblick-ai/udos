@@ -3,17 +3,18 @@ from scipy import stats
 
 columns = df[attributes['columns']]
 function = lambda x: 0
-new_column = params['column name'] if params['column name'] else params['statistic'] 
+stat = params['statistic'][0]
+new_column = params['column name'] if params['column name'] else stat
 
-if params['statistic'] == 'mean':
+if stat == 'mean':
     function = np.mean
-elif params['statistic'] == 'median':
+elif stat == 'median':
     function = np.median
-elif params['statistic'] == 'mode':
+elif stat == 'mode':
     function = lambda x: stats.mode(x)[0][0]
-elif params['statistic'] == 'max':
+elif stat == 'max':
     function = np.amax
-elif params['statistic'] == 'min':
+elif stat == 'min':
     function = np.amin
 
 

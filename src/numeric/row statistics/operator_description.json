@@ -16,78 +16,40 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "columns": {
-                "Name": "columns",
-                "FromDataframe": "input",
-                "DisplayName": "columns",
-                "MaxNr": -1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": false,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "statistic": {
-                "DisplayName": "statistic",
-                "__discriminator": "OptionsValueInputDescription",
-                "DefaultValue": "mean",
-                "Options": {
-                    "true": [
-                        {
-                            "Key": "mean",
-                            "DisplayName": "mean"
-                        },
-                        {
-                            "Key": "median",
-                            "DisplayName": "median"
-                        },
-                        {
-                            "Key": "mode",
-                            "DisplayName": "mode"
-                        },
-                        {
-                            "Key": "max",
-                            "DisplayName": "max"
-                        },
-                        {
-                            "Key": "min",
-                            "DisplayName": "min"
-                        }
-                    ]
-                }
-            },
-            "column name": {
-                "DisplayName": "column name",
-                "__discriminator": "StringValueInputDescription",
-                "DefaultValue": ""
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "columns",
-            "AttributeConfigGroupInputName": "columns",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "column name",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": ""
         },
         {
-            "Id": "statistic",
-            "ValueInputName": "statistic",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "ValueSelectorInputUIType"
+            "Name": "statistic",
+            "__discriminator": "OptionSelectorInnerInputDescription",
+            "Options": [
+                "mean",
+                "median",
+                "mode",
+                "max",
+                "min"
+            ],
+            "MaxNr": 1,
+            "MinNr": 1
         },
         {
-            "Id": "column name",
-            "ValueInputName": "column name",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "StringValueInputUIType"
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         }
     ]
 }
