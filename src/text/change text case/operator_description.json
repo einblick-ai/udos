@@ -1,0 +1,53 @@
+{
+    "Width": 300,
+    "Height": 300,
+    "Description": "Converts the text in the specified columns to uppercase or lowercase, or capitalizes each word.",
+    "AutoExecuteOnChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "Options": [
+                "uppercase",
+                "lowercase",
+                "capitalize"
+            ],
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": true,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "casing",
+            "__discriminator": "OptionSelectorInnerInputDescription",
+            "Options": [
+                "uppercase",
+                "lowercase",
+                "capitalize"
+            ],
+            "MaxNr": 1,
+            "MinNr": 1
+        }
+    ]
+}
