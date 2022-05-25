@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
     "Description": "Extract information such as the year, month, etc. from the date/time columns of a dataframe.",
     "Tags": [

@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
     "Description":  "Find instances of character sequences in a text column and replace them with other sequences.",
     "Tags": ["text"],

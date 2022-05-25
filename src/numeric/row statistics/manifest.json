@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
     "Description": "Computes a statistic (e.g. *max*, *average*) for each row of a dataframe.",
     "Tags": [

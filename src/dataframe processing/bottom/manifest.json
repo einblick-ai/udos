@@ -2,9 +2,9 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
-    "Description": "Returns the bottom N rows based on a numeric attribute",
+    "Description": "Select the `n` rows of a dataframe with the lowest values of the selected column.",
     "Tags": [
         "transformation"
     ],
