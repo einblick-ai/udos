@@ -19,8 +19,8 @@
             },
             "mark": {
                 "type": "geoshape",
-                "fill": "#333",
-                "stroke": "#bbb"
+                "fill": "#eee",
+                "stroke": "#888"
             }
         },
         {
@@ -52,25 +52,16 @@
                         },
                         "value": "white"
                     },
-                    "value": "#82a8d9"
+                    "value": "steelblue"
                 }
             }
         }
     ],
     "config": {
-        "background": "transparent",
-        "axis": {
-            "labelColor": "#ffffff",
-            "titleColor": "#ffffff"
-        },
+        "background": "white",
         "legend": {
-            "labelColor": "#ffffff",
-            "titleColor": "#ffffff",
             "labelFontSize": 12,
             "titleFontSize": 14
-        },
-        "view": {
-            "stroke": "transparent"
         }
     }
 }
