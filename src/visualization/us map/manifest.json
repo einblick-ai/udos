@@ -5,6 +5,8 @@
     "CompatibleWith": "0.0.0",
     "Deprecated": false,
     "Description": "Plot an attribute on a map of the USA based on latitudinal and longitudinal coordinates",
-    "Tags": ["visualization"],
+    "Tags": [
+        "visualization"
+    ],
     "Thumbnail": "thumbnail.png"
 }
