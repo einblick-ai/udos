@@ -1,6 +1,6 @@
 {
     "Width": 250,
-    "Height": 275,
+    "Height": 300,
     "Description": "Forces values in numeric columns to be within a specified range.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {

@@ -1,8 +1,8 @@
 {
     "Width": 250,
-    "Height": 225,
+    "Height": 300,
     "Description": "Computes the specified number of quantiles for a given numeric column. \n\nFor example, with 5 quantiles, the smallest value of the column will be in quantile 0, while the largest value will be in quantile 4.",
-    "AutoExecuteOnChange": false,
+    "AutoExecuteOnChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
@@ -35,12 +35,16 @@
         },
         {
             "Name": "# quantiles",
-            "SubLabel": "e.g. 100 (for percentiles)",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 10,
             "MaxValue": 1000,
             "MinValue": 2,
             "AllowDecimals": false
+        },
+        {
+            "Name": "output column name",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": ""
         }
     ]
 }
