@@ -22,7 +22,7 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "target",
+            "Name": "column",
             "SubLabel": "column to rank values by",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",

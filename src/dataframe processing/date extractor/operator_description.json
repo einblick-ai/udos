@@ -34,7 +34,7 @@
             "AllowNull": false
         },
         {
-            "Name": "date features to include",
+            "Name": "date columns to include",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
                 "year",
