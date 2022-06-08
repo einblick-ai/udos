@@ -1,6 +1,6 @@
 {
     "Width": 250,
-    "Height": 200,
+    "Height": 250,
     "Description": "Select the `n` rows of a dataframe with the lowest values of the selected column.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {

@@ -1,6 +1,6 @@
 {
     "Width": 300,
-    "Height": 450,
+    "Height": 300,
     "Description": "Extract information such as the year, month, etc. from the date/time columns of a dataframe.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {

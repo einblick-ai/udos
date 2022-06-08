@@ -35,7 +35,7 @@
         },
         {
             "Name": "append",
-            "SubLabel": "whether to keep original dataframes columns or not",
+            "SubLabel": "whether to append to original dataframe",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": true
         }
