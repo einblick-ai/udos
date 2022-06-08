@@ -35,6 +35,7 @@
         },
         {
             "Name": "characters",
+            "SubLabel": "e.g. '.com'",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": ""
         },

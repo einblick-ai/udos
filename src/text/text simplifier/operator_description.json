@@ -46,31 +46,37 @@
         },
         {
             "Name": "remove stop words",
+            "SubLabel": "e.g. 'the', 'is', 'a'",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "stem words",
+            "SubLabel": "e.g. 'stopping' becomes 'stop'",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "remove punctuation",
+            "SubLabel": "punctuation characters include: !\"'#$%&*+,-./:;<=>?@\\[](){}^_`~",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "sort alphabetically",
+            "SubLabel": "e.g. 'United States' becomes 'States United'",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "normalize",
+            "SubLabel": "apply NFC normalization",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "truncate length",
+            "SubLabel": "0 indicates no truncation",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 0,
             "MinValue": 0,

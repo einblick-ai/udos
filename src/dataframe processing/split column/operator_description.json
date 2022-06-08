@@ -22,17 +22,8 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "use regex",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": false
-        },
-        {
-            "Name": "delimiter",
-            "__discriminator": "StringValueInnerInputDescription",
-            "DefaultValue": ""
-        },
-        {
             "Name": "column",
+            "SubLabel": "text column containing delimiters to split by",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": 1,
@@ -42,6 +33,18 @@
             "AllowTimestamps": false,
             "AllowBooleans": false,
             "AllowNull": false
+        },
+        {
+            "Name": "delimiter",
+            "SubLabel": "e.g. ',', ' ', '[0-9]+'",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": ""
+        },
+        {
+            "Name": "use regex",
+            "SubLabel": "whether to parse the delimiter as a regular expression",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": false
         }
     ]
 }

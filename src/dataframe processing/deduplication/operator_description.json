@@ -22,7 +22,8 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "features",
+            "Name": "columns",
+            "SubLabel": "columns to compare when determining duplicate rows",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,

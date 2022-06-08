@@ -4,7 +4,7 @@ from scipy import stats
 columns = df[attributes['columns']]
 function = lambda x: 0
 stat = params['statistic'][0]
-new_column = params['column name'] if params['column name'] else stat
+new_column = params['output column name'] if params['output column name'] else stat
 
 if stat == 'mean':
     function = np.mean

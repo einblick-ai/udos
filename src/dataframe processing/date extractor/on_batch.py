@@ -1,9 +1,8 @@
 import numpy as np
 
-specified_cols = [x for x in ["year", "month", "day", "hour", "minute", "second", "microsecond", "nanosecond", "day of week"] if params["include " + x]]
-date_col_names = df[attributes['columns']].columns.tolist()
+specified_cols = [x for x in ["year", "month", "day", "hour", "minute", "second", "microsecond", "nanosecond", "day of week"] if x in params["date features to include"]]
 
-for column in date_col_names:
+for column in df[attributes['columns']].columns.tolist():
     for feature in specified_cols:
         if feature == "year":
             current_component = df[column].dt.year

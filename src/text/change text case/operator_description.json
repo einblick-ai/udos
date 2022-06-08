@@ -24,11 +24,6 @@
         {
             "Name": "columns",
             "__discriminator": "AttributeSelectorInnerInputDescription",
-            "Options": [
-                "uppercase",
-                "lowercase",
-                "capitalize"
-            ],
             "FromDataframe": "input",
             "MaxNr": -1,
             "MinNr": 1,

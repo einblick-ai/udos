@@ -22,6 +22,16 @@
     "InputUI": [],
     "InnerInputs": [
         {
+            "Name": "axis",
+            "__discriminator": "OptionSelectorInnerInputDescription",
+            "Options": [
+                "drop rows",
+                "drop columns"
+            ],
+            "MaxNr": 1,
+            "MinNr": 1
+        },
+        {
             "Name": "drop NaN",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": true
@@ -38,16 +48,6 @@
             "MaxValue": 100,
             "MinValue": 0,
             "AllowDecimals": true
-        },
-        {
-            "Name": "axis",
-            "__discriminator": "OptionSelectorInnerInputDescription",
-            "Options": [
-                "drop rows",
-                "drop columns"
-            ],
-            "MaxNr": 1,
-            "MinNr": 1
         }
     ]
 }

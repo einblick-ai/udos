@@ -37,16 +37,19 @@
         },
         {
             "Name": "first suffix",
+            "SubLabel": "suffix for duplicate columns from first dataframe",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": "_first"
         },
         {
             "Name": "second suffix",
+            "SubLabel": "suffix for duplicate columns from second dataframe",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": "_second"
         },
         {
             "Name": "suffix all",
+            "SubLabel": "whether to apply a suffix to all columns",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         }

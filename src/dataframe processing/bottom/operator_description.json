@@ -22,7 +22,8 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "target",
+            "Name": "column",
+            "SubLabel": "column to rank values by",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": 1,
@@ -34,7 +35,7 @@
             "AllowNull": false
         },
         {
-            "Name": "# rows",
+            "Name": "number of rows",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 10
         }

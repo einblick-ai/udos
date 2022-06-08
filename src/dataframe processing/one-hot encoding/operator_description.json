@@ -22,11 +22,6 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "append",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
-        },
-        {
             "Name": "column",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
@@ -37,6 +32,12 @@
             "AllowTimestamps": true,
             "AllowBooleans": true,
             "AllowNull": false
+        },
+        {
+            "Name": "append",
+            "SubLabel": "whether to keep original dataframes columns or not",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         }
     ]
 }

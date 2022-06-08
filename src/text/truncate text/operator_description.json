@@ -35,6 +35,7 @@
         },
         {
             "Name": "truncate length",
+            "SubLabel": "0 indicates no truncation",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 0,
             "MinValue": 0,

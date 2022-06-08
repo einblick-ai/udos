@@ -22,9 +22,17 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "column name",
-            "__discriminator": "StringValueInnerInputDescription",
-            "DefaultValue": ""
+            "Name": "columns",
+            "SubLabel": "which numeric columns to compute the statistic over",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
             "Name": "statistic",
@@ -40,16 +48,9 @@
             "MinNr": 1
         },
         {
-            "Name": "columns",
-            "__discriminator": "AttributeSelectorInnerInputDescription",
-            "FromDataframe": "input",
-            "MaxNr": -1,
-            "MinNr": 1,
-            "AllowNumeric": true,
-            "AllowStrings": false,
-            "AllowTimestamps": false,
-            "AllowBooleans": false,
-            "AllowNull": false
+            "Name": "output column name",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": ""
         }
     ]
 }

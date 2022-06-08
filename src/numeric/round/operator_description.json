@@ -35,6 +35,7 @@
         },
         {
             "Name": "decimal places",
+            "SubLabel": "e.g. '2' for nearest 0.01, '-2' for nearest 100",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 0,
             "AllowDecimals": false

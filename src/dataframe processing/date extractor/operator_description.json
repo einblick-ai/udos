@@ -34,55 +34,21 @@
             "AllowNull": false
         },
         {
-            "Name": "include year",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
-        },
-        {
-            "Name": "include month",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
-        },
-        {
-            "Name": "include day",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true,
+            "Name": "date features to include",
+            "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
-                null
-            ]
-        },
-        {
-            "Name": "include hour",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
-        },
-        {
-            "Name": "include minute",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
-        },
-        {
-            "Name": "include second",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
-        },
-        {
-            "Name": "include microsecond",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": false
-        },
-        {
-            "Name": "include nanosecond",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": false,
-            "Options": [
-                null
-            ]
-        },
-        {
-            "Name": "include day of week",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
+                "year",
+                "month",
+                "day",
+                "hour",
+                "minute",
+                "second",
+                "microsecond",
+                "nanosecond",
+                "day of week"
+            ],
+            "MaxNr": -1,
+            "MinNr": 1
         }
     ]
 }
