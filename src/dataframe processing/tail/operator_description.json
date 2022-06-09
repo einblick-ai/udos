@@ -1,0 +1,32 @@
+{
+    "Width": 250,
+    "Height": 125,
+    "Description": "Returns the last N rows of a dataframe.",
+    "AutoExecuteOnChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "number of rows",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 10,
+            "MinValue": 1,
+            "AllowDecimals": false
+        }
+    ]
+}
