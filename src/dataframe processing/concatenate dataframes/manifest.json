@@ -2,9 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
-    "Description": "Concatenate two dataframes",
-    "Tags": ["transformation"],
+    "Description": "Concatenate two dataframes. When concatenating horizontally, prefixes are only added to distinguish between identically-named columns unless `suffix all` is indicated.",
+    "Tags": [
+        "transformation"
+    ],
     "Thumbnail": null
 }

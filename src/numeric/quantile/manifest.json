@@ -2,9 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
     "Description": "Computes the specified number of quantiles for a given numeric column. \n\nFor example, with 5 quantiles, the smallest value of the column will be in quantile 0, while the largest value will be in quantile 4.",
-    "Tags": ["numeric"],
+    "Tags": [
+        "numeric"
+    ],
     "Thumbnail": null
 }

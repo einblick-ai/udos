@@ -1,7 +1,7 @@
 {
-    "Width": 400,
+    "Width": 250,
     "Height": 300,
-    "Description": "Data manipulation operator to drop columns or rows based on % of NaNs and Infinity values",
+    "Description": "Drops columns or rows based on % of NaNs and Infinity values.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
         "DataframeInputModels": [
@@ -17,68 +17,37 @@
             }
         ],
         "AttributeConfigGroupInputDescription": {},
-        "ValueInputDescription": {
-            "drop nan": {
-                "DisplayName": "drop nan",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            },
-            "drop infinity": {
-                "DisplayName": "drop infinity",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": false
-            },
-            "min % valid values": {
-                "DisplayName": "min % valid values",
-                "__discriminator": "NumberRangeValueInputDescription",
-                "DefaultValue": 20,
-                "MaxValue": 100,
-                "MinValue": 0,
-                "StepSize": 1
-            },
-            "axis": {
-                "DisplayName": "axis",
-                "__discriminator": "OptionsValueInputDescription",
-                "DefaultValue": "drop columns",
-                "Options": {
-                    "true": [
-                        {
-                            "Key": "drop columns",
-                            "DisplayName": "drop columns"
-                        },
-                        {
-                            "Key": "drop rows",
-                            "DisplayName": "drop rows"
-                        }
-                    ]
-                }
-            }
-        }
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "drop nan",
-            "ValueInputName": "drop nan",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
+            "Name": "axis",
+            "__discriminator": "OptionSelectorInnerInputDescription",
+            "Options": [
+                "drop rows",
+                "drop columns"
+            ],
+            "MaxNr": 1,
+            "MinNr": 1
         },
         {
-            "Id": "drop infinity",
-            "ValueInputName": "drop infinity",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
+            "Name": "drop NaN",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         },
         {
-            "Id": "min % valid values",
-            "ValueInputName": "min % valid values",
-            "Icon": "fas fa-tag",
-            "__discriminator": "NumberRangeInputUIType"
+            "Name": "drop infinity",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         },
         {
-            "Id": "axis",
-            "ValueInputName": "axis",
-            "Icon": "fas fa-tag",
-            "__discriminator": "ValueSelectorInputUIType"
+            "Name": "min % valid values",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 20,
+            "MaxValue": 100,
+            "MinValue": 0,
+            "AllowDecimals": true
         }
     ]
 }

@@ -1,5 +1,5 @@
 {
-    "Width": 400,
+    "Width": 250,
     "Height": 300,
     "Description": "Forces values in numeric columns to be within a specified range.",
     "AutoExecuteOnChange": false,
@@ -16,54 +16,32 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "columns": {
-                "Name": "columns",
-                "FromDataframe": "input",
-                "DisplayName": "columns",
-                "MaxNr": -1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": false,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "min": {
-                "DisplayName": "min",
-                "__discriminator": "NumberValueInputDescription",
-                "DefaultValue": 0
-            },
-            "max": {
-                "DisplayName": "max",
-                "__discriminator": "NumberValueInputDescription",
-                "DefaultValue": 0
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "columns",
-            "AttributeConfigGroupInputName": "columns",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
-            "Id": "min",
-            "ValueInputName": "min",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "NumberValueInputUIType"
+            "Name": "min",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0
         },
         {
-            "Id": "max",
-            "ValueInputName": "max",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "NumberValueInputUIType"
+            "Name": "max",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0
         }
     ]
 }

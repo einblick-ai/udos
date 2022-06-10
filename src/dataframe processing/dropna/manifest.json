@@ -2,9 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Benedetto J. Buratti",
     "AuthorEmail": "bb@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
-    "Description": "Data manipulation operator to drop columns or rows based on % of NaNs and Infinity values",
-    "Tags": ["data cleaning"],
+    "Description": "Drops columns or rows based on % of NaNs and Infinity values.",
+    "Tags": [
+        "data cleaning"
+    ],
     "Thumbnail": null
 }

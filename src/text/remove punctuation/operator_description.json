@@ -1,0 +1,38 @@
+{
+    "Width": 300,
+    "Height": 300,
+    "Description": "Removes any punctuation characters in the specified columns.",
+    "AutoExecuteOnChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns",
+            "SubLabel": "punctuation characters include: '!\"#$%&*+,-./:;<=>?@\\[](){}^_`~",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": true,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        }
+    ]
+}

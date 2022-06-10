@@ -1,1 +1,2 @@
-df[attributes['column'][0] + "_quantile"] = pd.qcut(df[attributes['column'][0]], params['# quantiles'], duplicates='drop', labels=False)
+output_column_name = attributes['column'][0] + "_quantile" if params['output column name'] == "" else params['output column name']
+df[output_column_name] = pd.qcut(df[attributes['column'][0]], params['# quantiles'], duplicates='drop', labels=False)

@@ -2,9 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
-    "Description": "Negates boolean attributes.",
-    "Tags": ["transformation"],
+    "Description": "Negates boolean (true/false) columns.",
+    "Tags": [
+        "transformation"
+    ],
     "Thumbnail": null
 }

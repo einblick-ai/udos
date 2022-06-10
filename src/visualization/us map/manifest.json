@@ -2,11 +2,9 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
-    "Description": "Plot an attribute on a map of the USA based on latitudinal and longitudinal coordinates",
-    "Tags": [
-        "visualization"
-    ],
+    "Description": "A map of the US with different points, indicated by latitude and longitude, marked by circles. The size of the circle at each location is determined by the magnitude of the chosen `size` column.",
+    "Tags": ["visualization"],
     "Thumbnail": "thumbnail.png"
 }

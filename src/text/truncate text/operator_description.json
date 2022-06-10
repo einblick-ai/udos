@@ -1,0 +1,45 @@
+{
+    "Width": 300,
+    "Height": 300,
+    "Description": "Truncate text columns to a specified length. A length of 0 indicates no truncation.",
+    "AutoExecuteOnChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": true,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "truncate length",
+            "SubLabel": "0 indicates no truncation",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0,
+            "MinValue": 0,
+            "AllowDecimals": false
+        }
+    ]
+}

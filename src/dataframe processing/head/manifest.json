@@ -1,0 +1,12 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.1.0",
+    "Deprecated": false,
+    "Description": "Returns the first N rows of a dataframe.",
+    "Tags": [
+        "transformation"
+    ],
+    "Thumbnail": null
+}

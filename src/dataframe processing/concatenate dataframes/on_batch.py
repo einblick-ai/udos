@@ -3,7 +3,7 @@ import numpy as np
 first_columns = []
 second_columns = []
 
-if params["type"] == "horizontal":
+if params["type"][0] == "horizontal":
     if dfs[0].shape[0] != dfs[1].shape[0]:
         raise ValueError("input dataframes must have the same number of rows")
 

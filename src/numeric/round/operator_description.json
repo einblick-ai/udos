@@ -1,6 +1,6 @@
 {
-    "Width": 400,
-    "Height": 300,
+    "Width": 300,
+    "Height": 250,
     "Description": "Rounds numbers to the specified number of decimal places. Negative numbers round before the decimal place (e.g. -3 rounds to the nearest thousand).",
     "AutoExecuteOnChange": true,
     "ComputationDescription": {
@@ -16,45 +16,29 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "columns": {
-                "Name": "columns",
-                "FromDataframe": "input",
-                "DisplayName": "columns",
-                "MaxNr": -1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": false,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "decimal places": {
-                "DisplayName": "decimal places",
-                "__discriminator": "NumberRangeValueInputDescription",
-                "DefaultValue": 0,
-                "MaxValue": 10,
-                "MinValue": -10,
-                "StepSize": 1
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "columns",
-            "AttributeConfigGroupInputName": "columns",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
-            "Id": "decimal places",
-            "ValueInputName": "decimal places",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "NumberRangeInputUIType"
+            "Name": "decimal places",
+            "SubLabel": "e.g. '2' for nearest 0.01, '-2' for nearest 100",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0,
+            "AllowDecimals": false
         }
     ]
 }

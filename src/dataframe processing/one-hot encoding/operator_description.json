@@ -1,8 +1,6 @@
 {
-    "Width": 400,
-    "Height": 300,
-    "MinWidth": 300,
-    "MinHeight": 250,
+    "Width": 300,
+    "Height": 350,
     "Description": "Performs one-hot encoding (also known as dummification) on a column.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
@@ -18,42 +16,28 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "column": {
-                "Name": "column",
-                "FromDataframe": "input",
-                "DisplayName": "column",
-                "MaxNr": 1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": true,
-                "AllowTimestamps": true,
-                "AllowBooleans": true,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "append": {
-                "DisplayName": "append",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": true
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "column",
-            "AttributeConfigGroupInputName": "column",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "column",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": true,
+            "AllowTimestamps": true,
+            "AllowBooleans": true,
+            "AllowNull": false
         },
         {
-            "Id": "append",
-            "ValueInputName": "append",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
+            "Name": "append",
+            "SubLabel": "whether to append to original dataframe",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         }
     ]
 }

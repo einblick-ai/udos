@@ -2,9 +2,9 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.0.0",
+    "CompatibleWith": "0.1.0",
     "Deprecated": false,
-    "Description": "Create a word cloud based on a text attribute",
+    "Description": "Generates a word cloud from a column of text.",
     "Tags": ["visualization"],
     "Thumbnail": "thumbnail.png"
 }

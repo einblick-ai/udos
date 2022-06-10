@@ -1,6 +1,6 @@
 {
-    "Width": 400,
-    "Height": 300,
+    "Width": 300,
+    "Height": 350,
     "Description": "Creates new columns (max 100) by splitting a specified text column by a given delimiter. Regex is supported.",
     "AutoExecuteOnChange": false,
     "ComputationDescription": {
@@ -16,54 +16,35 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "column": {
-                "Name": "column",
-                "FromDataframe": "input",
-                "DisplayName": "column",
-                "MaxNr": 1,
-                "MinNr": 1,
-                "AllowNumeric": false,
-                "AllowStrings": true,
-                "AllowTimestamps": false,
-                "AllowBooleans": false,
-                "AllowNull": false
-            }
-        },
-        "ValueInputDescription": {
-            "delimiter": {
-                "DisplayName": "delimiter",
-                "__discriminator": "StringValueInputDescription",
-                "DefaultValue": ""
-            },
-            "use regex": {
-                "DisplayName": "use regex",
-                "__discriminator": "BooleanValueInputDescription",
-                "DefaultValue": false
-            }
-        }
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "column",
-            "AttributeConfigGroupInputName": "column",
-            "When": "true",
-            "Icon": "fas fa-bullseye",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "column",
+            "SubLabel": "text column containing delimiters to split by",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": true,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
-            "Id": "delimiter",
-            "ValueInputName": "delimiter",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "StringValueInputUIType"
+            "Name": "delimiter",
+            "SubLabel": "e.g. '-', '[0-9]+'",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": ""
         },
         {
-            "Id": "use regex",
-            "ValueInputName": "use regex",
-            "When": "true",
-            "Icon": "fas fa-tag",
-            "__discriminator": "BooleanValueInputUIType"
+            "Name": "use regex",
+            "SubLabel": "whether to parse the delimiter as a regular expression",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": false
         }
     ]
 }

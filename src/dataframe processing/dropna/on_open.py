@@ -11,7 +11,7 @@ else:
     self._how = "any"
 
 self._relative_threshold = float(params["min % valid values"]) / 100
-self._drop_nan = params["drop nan"]
+self._drop_nan = params["drop NaN"]
 self._drop_infinity = params["drop infinity"]
 self._first_batch = True
 self._columns_to_keep = None
