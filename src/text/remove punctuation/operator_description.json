@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Removes any punctuation characters in the specified columns.",
     "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

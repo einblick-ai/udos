@@ -3,6 +3,7 @@
     "Height": 125,
     "Description": "Returns the last N rows of a dataframe.",
     "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

@@ -3,6 +3,7 @@
     "Height": 425,
     "Description": "Concatenate two dataframes. When concatenating horizontally, prefixes are only added to distinguish between identically-named columns unless `suffix all` is indicated.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": false,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

@@ -3,6 +3,7 @@
     "Height": 400,
     "Description": "Performs and visualizes a linear regression between two attributes.",
     "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
     "DisplayContentAtLowFidelity": true,
     "ComputationDescription": {
         "DataframeInputModels": [

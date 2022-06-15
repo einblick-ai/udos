@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Removes all (except one) duplicate rows of a dataframe, where duplicates are determined by the values in the selected columns.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": false,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

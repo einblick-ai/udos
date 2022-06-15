@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Find instances of character sequences in a text column and replace them with other sequences.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": false,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

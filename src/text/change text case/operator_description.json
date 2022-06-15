@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Converts the text in the specified columns to uppercase or lowercase, or capitalizes each word.",
     "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

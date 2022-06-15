@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Forces values in numeric columns to be within a specified range.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": false,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
