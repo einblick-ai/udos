@@ -3,7 +3,7 @@
     "Height": 350,
     "Description": "Creates new columns (max 100) by splitting a specified text column by a given delimiter. Regex is supported.",
     "AutoExecuteOnChange": false,
-    "AutoExecuteOnUpstreamChange": false,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
