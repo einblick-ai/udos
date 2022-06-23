@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Drops columns or rows based on % of NaNs and Infinity values.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

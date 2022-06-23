@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Assign rows of a dataframe to bins based on specified conditions.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

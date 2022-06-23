@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Removes a specified suffix from all rows in the specified text columns.",
     "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

@@ -3,6 +3,7 @@
     "Height": 200,
     "Description": "Negates boolean (true/false) columns.",
     "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

@@ -3,6 +3,7 @@
     "Height": 300,
     "Description": "Extract information such as the year, month, etc. from the date/time columns of a dataframe.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

@@ -3,6 +3,7 @@
     "Height": 350,
     "Description": "Performs one-hot encoding (also known as dummification) on a column.",
     "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
