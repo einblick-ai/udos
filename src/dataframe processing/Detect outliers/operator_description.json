@@ -1,0 +1,48 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Uses the IsolationForest algorithm to detect outliers in a dataset using the specified columns. A new *outlier* column will be created.",
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns",
+            "SubLabel": "Columns to use to determine outliers",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "strictness",
+            "SubLabel": "How strictly to determine outliers. Higher values indicate a more strict threshold. Use 0 to use the default value.",
+            "__discriminator": "NumberRangeInnerInputDescription",
+            "DefaultValue": 0,
+            "MaxValue": 1000,
+            "MinValue": 0,
+            "StepSize": 10
+        }
+    ]
+}
