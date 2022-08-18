@@ -4,7 +4,7 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "0.1.1",
     "Deprecated": false,
-    "Description": "Converts the text in the specified columns to uppercase or lowercase, or capitalizes each word.",
+    "Description": "Removes a specified prefix from all rows in the specified text columns.",
     "Tags": [
         "text"
     ],

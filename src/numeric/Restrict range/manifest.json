@@ -4,9 +4,9 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "0.1.1",
     "Deprecated": false,
-    "Description": "Converts the text in the specified columns to uppercase or lowercase, or capitalizes each word.",
+    "Description": "Forces values in numeric columns to be within a specified range.",
     "Tags": [
-        "text"
+        "numeric"
     ],
     "Thumbnail": null
 }

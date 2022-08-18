@@ -4,9 +4,9 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "0.1.1",
     "Deprecated": false,
-    "Description": "Converts the text in the specified columns to uppercase or lowercase, or capitalizes each word.",
+    "Description": "Rounds numbers to the specified number of decimal places. Negative numbers round before the decimal place (e.g. -3 rounds to the nearest thousand).",
     "Tags": [
-        "text"
+        "numeric"
     ],
     "Thumbnail": null
 }

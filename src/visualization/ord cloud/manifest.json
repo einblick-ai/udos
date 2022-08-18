@@ -1,0 +1,10 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.1.1",
+    "Deprecated": false,
+    "Description": "Generates a word cloud from a column of text.",
+    "Tags": ["visualization"],
+    "Thumbnail": "thumbnail.png"
+}

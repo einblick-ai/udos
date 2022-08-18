@@ -4,8 +4,7 @@
     "AuthorEmail": "bb@einblick.ai",
     "CompatibleWith": "0.1.1",
     "Deprecated": false,
-    "Description": "Uses the IsolationForest algorithm to detect outliers in a dataset using the specified columns. A new *outlier* column will be created.",
-    "Keywords": null,
+    "Description": "Removes all (except one) duplicate rows of a dataframe, where duplicates are determined by the values in the selected columns.",
     "Tags": [
         "data cleaning"
     ],
