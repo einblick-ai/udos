@@ -1,0 +1,24 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "params['title']",
+    "description": "A simple 1D box plot.",
+    "data": {
+        "values": []
+    },
+    "mark": {
+        "type": "boxplot",
+        "extent": "params['extent']"
+    },
+    "encoding": {
+        "x": {
+            "field": "attributes['target'][0]",
+            "type": "quantitative",
+            "scale": {
+                "zero": false
+            }
+        }
+    },
+    "config": {
+        "background": "white"
+    }
+}

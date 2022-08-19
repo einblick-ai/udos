@@ -1,0 +1,48 @@
+{
+    "Width": 250,
+    "Height": 300,
+    "Description": "Forces values in numeric columns to be within a specified range.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "min",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0
+        },
+        {
+            "Name": "max",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0
+        }
+    ]
+}

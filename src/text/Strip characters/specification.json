@@ -1,0 +1,55 @@
+{
+    "Width": 325,
+    "Height": 325,
+    "Description": "Removes text from either or both ends of a string column. Strips whitespace if no characters are provided, but can strip other provided characters as well.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns to strip",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": false,
+            "AllowStrings": true,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "characters",
+            "SubLabel": "e.g. '.com'",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": ""
+        },
+        {
+            "Name": "side(s) to strip",
+            "__discriminator": "OptionSelectorInnerInputDescription",
+            "Options": [
+                "both",
+                "left",
+                "right"
+            ],
+            "MaxNr": 1,
+            "MinNr": 1
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "Width": 300,
+    "Height": 350,
+    "Description": "Performs one-hot encoding (also known as dummification) on a column.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "column",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": true,
+            "AllowTimestamps": true,
+            "AllowBooleans": true,
+            "AllowNull": false
+        },
+        {
+            "Name": "append",
+            "SubLabel": "whether to append to original dataframe",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
+        }
+    ]
+}

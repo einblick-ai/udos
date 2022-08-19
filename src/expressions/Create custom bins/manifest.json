@@ -2,9 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.1.1",
+    "CompatibleWith": "1.0.0",
     "Deprecated": false,
-    "Description":  "Assign rows of a dataframe to bins based on specified conditions.",
-    "Tags": ["transformation"],
+    "Description": "Assign rows of a dataframe to bins based on specified conditions.",
+    "Tags": [
+        "transformation"
+    ],
     "Thumbnail": null
 }

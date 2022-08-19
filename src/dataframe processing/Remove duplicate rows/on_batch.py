@@ -1,1 +1,0 @@
-return df.drop_duplicates(subset=attributes['columns'])

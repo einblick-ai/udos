@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Rupayan Neogy",
     "AuthorEmail": "rupayan.neogy@einblick.ai",
-    "CompatibleWith": "0.1.1",
+    "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Removes text from either or both ends of a string column. Strips whitespace if no characters are provided, but can strip other provided characters as well.",
     "Tags": [

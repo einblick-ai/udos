@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.1.1",
+    "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Performs and visualizes a linear regression between two attributes.",
     "Tags": ["visualization"],

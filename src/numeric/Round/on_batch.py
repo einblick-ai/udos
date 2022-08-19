@@ -1,1 +1,0 @@
-df[attributes['columns']] = df[attributes['columns']].apply(lambda x: x.apply(lambda y: round(y, params['decimal places']) if y >= 0 else int(round(y, params['decimal places']))))

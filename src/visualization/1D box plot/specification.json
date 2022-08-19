@@ -1,0 +1,66 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "By default, the whiskers of the box plot reach until up to 1.5 times the IQR, with points outside this range being indicated as outliers. This factor is adjustable through the `extent` option. Set `extent` to `min-max` to make the whiskers cover the full range of the data.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "DisplayContentAtLowFidelity": true,
+    "InnerInputs": [],
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "target": {
+                "Name": "target",
+                "FromDataframe": "input",
+                "DisplayName": "target",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "title": {
+                "DisplayName": "title",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "untitled"
+            },
+            "extent": {
+                "DisplayName": "extent",
+                "__discriminator": "StringValueInputDescription",
+                "DefaultValue": "1.5"
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "target",
+            "AttributeConfigGroupInputName": "target",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "title",
+            "ValueInputName": "title",
+            "__discriminator": "StringValueInputUIType"
+        },
+        {
+            "Id": "extent",
+            "ValueInputName": "extent",
+            "__discriminator": "StringValueInputUIType"
+        }
+    ]
+}

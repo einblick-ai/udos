@@ -1,0 +1,43 @@
+{
+    "Width": 250,
+    "Height": 225,
+    "Description": "Rounds numbers to the specified number of decimal places. Negative numbers round before the decimal place (e.g. -3 rounds to the nearest thousand).",
+    "AutoExecuteOnChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "columns",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "decimal places",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0,
+            "AllowDecimals": false
+        }
+    ]
+}
