@@ -1,11 +1,9 @@
 {
-    "Width": 420,
-    "Height": 400,
-    "Description": "Performs and visualizes a linear regression between two attributes.",
+    "Width": 400,
+    "Height": 325,
+    "Description": "Returns the regression coefficients and p-values for a linear regression performed on the provided data.",
     "AutoExecuteOnChange": true,
     "AutoExecuteOnUpstreamChange": true,
-    "DisplayContentAtLowFidelity": true,
-    "InnerInputs": [],
     "ComputationDescription": {
         "DataframeInputModels": [
             {
@@ -19,44 +17,42 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {
-            "x": {
-                "Name": "x",
-                "FromDataframe": "input",
-                "DisplayName": "x",
-                "MaxNr": 1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": true,
-                "AllowNull": false
-            },
-            "y": {
-                "Name": "y",
-                "FromDataframe": "input",
-                "DisplayName": "y",
-                "MaxNr": 1,
-                "MinNr": 1,
-                "AllowNumeric": true,
-                "AllowStrings": false,
-                "AllowTimestamps": false,
-                "AllowBooleans": true,
-                "AllowNull": false
-            }
-        },
+        "AttributeConfigGroupInputDescription": {},
         "ValueInputDescription": {}
     },
-    "InputUI": [
+    "InputUI": [],
+    "InnerInputs": [
         {
-            "Id": "x",
-            "AttributeConfigGroupInputName": "x",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "features",
+            "SubLabel": "columns to use as predictors",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
         },
         {
-            "Id": "y",
-            "AttributeConfigGroupInputName": "y",
-            "__discriminator": "AttributeSelectorInputUIType"
+            "Name": "target",
+            "SubLabel": "column containing values to predict",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "fit intercept",
+            "SubLabel": "whether to calculate an intercept ('const') in the regression",
+            "__discriminator": "CheckboxInnerInputDescription",
+            "DefaultValue": true
         }
     ]
 }
