@@ -17,42 +17,62 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {},
-        "ValueInputDescription": {}
-    },
-    "InputUI": [],
-    "InnerInputs": [
-        {
-            "Name": "features",
-            "SubLabel": "columns to use as predictors",
-            "__discriminator": "AttributeSelectorInnerInputDescription",
-            "FromDataframe": "input",
-            "MaxNr": -1,
-            "MinNr": 1,
-            "AllowNumeric": true,
-            "AllowStrings": false,
-            "AllowTimestamps": false,
-            "AllowBooleans": false,
-            "AllowNull": false
+        "AttributeConfigGroupInputDescription": {
+            "features": {
+                "Name": "features",
+                "FromDataframe": "input",
+                "DisplayName": "features",
+                "MaxNr": -1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            },
+            "target": {
+                "Name": "target",
+                "FromDataframe": "input",
+                "DisplayName": "target",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
         },
-        {
-            "Name": "target",
-            "SubLabel": "column containing values to predict",
-            "__discriminator": "AttributeSelectorInnerInputDescription",
-            "FromDataframe": "input",
-            "MaxNr": 1,
-            "MinNr": 1,
-            "AllowNumeric": true,
-            "AllowStrings": false,
-            "AllowTimestamps": false,
-            "AllowBooleans": false,
-            "AllowNull": false
-        },
-        {
-            "Name": "fit intercept",
-            "SubLabel": "whether to calculate an intercept ('const') in the regression",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
+        "ValueInputDescription": {
+            "fit intercept": {
+                "DisplayName": "fit intercept",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": true
+            }
         }
-    ]
+    },
+    "InputUI": [
+        {
+            "Id": "features",
+            "AttributeConfigGroupInputName": "features",
+            "When": "true",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "target",
+            "AttributeConfigGroupInputName": "target",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "fit intercept",
+            "ValueInputName": "fit intercept",
+            "When": "true",
+            "Icon": "fas fa-plus",
+            "__discriminator": "BooleanValueInputUIType"
+        }
+    ],
+    "InnerInputs": []
 }
