@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Performs one-hot encoding (also known as dummification) on a column.",
     "Tags": [
-        "data cleaning"
+        "Data cleaning"
     ],
     "Thumbnail": null
 }

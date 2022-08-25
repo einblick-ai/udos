@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Returns the first N rows of a dataframe.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }

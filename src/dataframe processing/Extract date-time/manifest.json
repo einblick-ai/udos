@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Extract information such as the year, month, etc. from the date/time columns of a dataframe.",
     "Tags": [
-        "data cleaning"
+        "Data cleaning"
     ],
     "Thumbnail": null
 }

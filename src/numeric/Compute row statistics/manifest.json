@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Computes a statistic (e.g. *max*, *average*) for each row of a dataframe.",
     "Tags": [
-        "numeric"
+        "Numeric"
     ],
     "Thumbnail": null
 }

@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Find instances of character sequences in a text column and replace them with other sequences.",
     "Tags": [
-        "text"
+        "Text"
     ],
     "Thumbnail": null
 }

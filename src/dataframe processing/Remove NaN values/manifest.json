@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Drops columns or rows based on % of NaNs and Infinity values.",
     "Tags": [
-        "data cleaning"
+        "Data cleaning"
     ],
     "Thumbnail": null
 }

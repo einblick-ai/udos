@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Performs a simple matrix transpose of the selected columns. The selected columns must all have the same data type.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }

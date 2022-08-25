@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Removes any punctuation characters in the specified columns.",
     "Tags": [
-        "text"
+        "Text"
     ],
     "Thumbnail": null
 }

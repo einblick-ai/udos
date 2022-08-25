@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Concatenate two dataframes. When concatenating horizontally, prefixes are only added to distinguish between identically-named columns unless `suffix all` is indicated.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }

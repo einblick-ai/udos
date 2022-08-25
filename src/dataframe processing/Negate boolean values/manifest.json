@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Negates boolean (true/false) columns.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }

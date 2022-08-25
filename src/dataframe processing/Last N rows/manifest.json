@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Returns the last N rows of a dataframe.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }

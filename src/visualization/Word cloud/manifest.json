@@ -5,6 +5,6 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Generates a word cloud from a column of text.",
-    "Tags": ["visualization"],
+    "Tags": ["Visualization"],
     "Thumbnail": "thumbnail.png"
 }

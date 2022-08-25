@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Creates new columns (max 100) by splitting the specified text columns by a given delimiter. Regex is supported.",
     "Tags": [
-        "text"
+        "Text"
     ],
     "Thumbnail": null
 }

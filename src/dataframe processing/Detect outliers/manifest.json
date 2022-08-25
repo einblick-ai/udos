@@ -7,7 +7,7 @@
     "Description": "Uses the IsolationForest algorithm to detect outliers in a dataset using the specified columns. A new *outlier* column will be created.",
     "Keywords": null,
     "Tags": [
-        "data cleaning"
+        "Data cleaning"
     ],
     "Thumbnail": null
 }

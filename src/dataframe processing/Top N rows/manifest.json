@@ -6,7 +6,7 @@
     "Deprecated": false,
     "Description": "Select the `n` rows of a dataframe with the highest values of the selected column.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }
