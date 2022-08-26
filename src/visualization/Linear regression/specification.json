@@ -18,10 +18,10 @@
             }
         ],
         "AttributeConfigGroupInputDescription": {
-            "features": {
-                "Name": "features",
+            "Features": {
+                "Name": "Features",
                 "FromDataframe": "input",
-                "DisplayName": "features",
+                "DisplayName": "Features",
                 "MaxNr": -1,
                 "MinNr": 1,
                 "AllowNumeric": true,
@@ -30,10 +30,10 @@
                 "AllowBooleans": false,
                 "AllowNull": false
             },
-            "target": {
-                "Name": "target",
+            "Target": {
+                "Name": "Target",
                 "FromDataframe": "input",
-                "DisplayName": "target",
+                "DisplayName": "Target",
                 "MaxNr": 1,
                 "MinNr": 1,
                 "AllowNumeric": true,
@@ -44,8 +44,8 @@
             }
         },
         "ValueInputDescription": {
-            "fit intercept": {
-                "DisplayName": "fit intercept",
+            "Fit intercept": {
+                "DisplayName": "Fit intercept",
                 "__discriminator": "BooleanValueInputDescription",
                 "DefaultValue": true
             }
@@ -53,22 +53,22 @@
     },
     "InputUI": [
         {
-            "Id": "features",
-            "AttributeConfigGroupInputName": "features",
+            "Id": "Features",
+            "AttributeConfigGroupInputName": "Features",
             "When": "true",
             "Icon": "fas fa-bullseye",
             "__discriminator": "AttributeSelectorInputUIType"
         },
         {
-            "Id": "target",
-            "AttributeConfigGroupInputName": "target",
+            "Id": "Target",
+            "AttributeConfigGroupInputName": "Target",
             "When": "true",
             "Icon": "fas fa-tag",
             "__discriminator": "AttributeSelectorInputUIType"
         },
         {
-            "Id": "fit intercept",
-            "ValueInputName": "fit intercept",
+            "Id": "Fit intercept",
+            "ValueInputName": "Fit intercept",
             "When": "true",
             "Icon": "fas fa-plus",
             "__discriminator": "BooleanValueInputUIType"

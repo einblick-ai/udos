@@ -7,13 +7,12 @@ for df in self.from_input(0).flatten():
     dfs.append(df)
 
 df = pd.concat(dfs, axis=0)
-print(df)
 
-X = df[attributes['features']].drop(attributes['target'], axis=1, errors="ignore")
-if params['fit intercept']:
+X = df[attributes['Features']].drop(attributes['Target'], axis=1, errors="ignore")
+if params['Fit intercept']:
     X = sm.add_constant(X, prepend=False)
 
-Y = df[attributes['target']]
+Y = df[attributes['Target']]
 
 model = sm.OLS(Y, X)
 fit = model.fit()
