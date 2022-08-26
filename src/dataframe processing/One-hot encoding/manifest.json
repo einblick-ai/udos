@@ -1,0 +1,12 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.1.1",
+    "Deprecated": false,
+    "Description": "Performs one-hot encoding (also known as dummification) on a column.",
+    "Tags": [
+        "data cleaning"
+    ],
+    "Thumbnail": null
+}

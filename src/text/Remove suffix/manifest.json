@@ -1,0 +1,12 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Wesley Runnels",
+    "AuthorEmail": "wr@einblick.ai",
+    "CompatibleWith": "0.1.1",
+    "Deprecated": false,
+    "Description": "Removes a specified suffix from all rows in the specified text columns.",
+    "Tags": [
+        "text"
+    ],
+    "Thumbnail": null
+}
