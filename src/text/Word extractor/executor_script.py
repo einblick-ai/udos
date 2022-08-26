@@ -9,7 +9,7 @@ df = pd.concat(dfs, axis=0)
 
 vectorizer = self.load_state(__state_id__)
 
-s = df[attributes["target"][0]].tolist()
+s = df[attributes["Target"][0]].tolist()
 vector = vectorizer.transform(s).todense()
 vector_df = pd.DataFrame(vector, columns = vectorizer.get_feature_names())
 
