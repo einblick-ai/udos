@@ -1,0 +1,125 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Generates an executor to extract statistics from the top-k words from textual columns.\n\nAttributes/Parameters:\n\n* **target**: textual column to convert\n* **max words**: number of words to extract that will create additional columns\n* **max ngram**: max contiguous sequence of words to consider\n* **extractor type**: strategy to compute statistics 1) count or 2) [TF/IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) ",
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "target": {
+                "Name": "target",
+                "FromDataframe": "input",
+                "DisplayName": "target",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": false,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "max words": {
+                "DisplayName": "max words",
+                "__discriminator": "NumberRangeValueInputDescription",
+                "DefaultValue": 10,
+                "MaxValue": 97,
+                "MinValue": 1,
+                "StepSize": 1
+            },
+            "max ngram": {
+                "DisplayName": "max ngram",
+                "__discriminator": "NumberRangeValueInputDescription",
+                "DefaultValue": 1,
+                "MaxValue": 3,
+                "MinValue": 1,
+                "StepSize": 1
+            },
+            "extractor type": {
+                "DisplayName": "extractor type",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "TF/IDF",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "TF/IDF",
+                            "DisplayName": "TF/IDF"
+                        },
+                        {
+                            "Key": "Count",
+                            "DisplayName": "Count"
+                        }
+                    ]
+                }
+            },
+            "stem words": {
+                "DisplayName": "stem words",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            },
+            "remove stop words": {
+                "DisplayName": "remove stop words",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": false
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "target",
+            "AttributeConfigGroupInputName": "target",
+            "When": "true",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "max words",
+            "ValueInputName": "max words",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "NumberRangeInputUIType"
+        },
+        {
+            "Id": "max ngram",
+            "ValueInputName": "max ngram",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "NumberRangeInputUIType"
+        },
+        {
+            "Id": "extractor type",
+            "ValueInputName": "extractor type",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "ValueSelectorInputUIType"
+        },
+        {
+            "Id": "stem words",
+            "ValueInputName": "stem words",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        },
+        {
+            "Id": "remove stop words",
+            "ValueInputName": "remove stop words",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "BooleanValueInputUIType"
+        }
+    ],
+    "InnerInputs": []
+}

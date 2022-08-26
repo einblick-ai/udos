@@ -1,0 +1,46 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Replaces non-numeric values with a specified value.",
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": false,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "Columns",
+            "SubLabel": "Columns to remove NaN values from",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": true,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "Fill value",
+            "SubLabel": "Value to use as replacement",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 0,
+            "AllowDecimals": true
+        }
+    ]
+}

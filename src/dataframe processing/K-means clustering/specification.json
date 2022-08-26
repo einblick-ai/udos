@@ -1,0 +1,52 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Performs k-means clustering on a dataset.",
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "Features",
+            "SubLabel": "Columns to use to determine clusters",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": -1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": false,
+            "AllowNull": false
+        },
+        {
+            "Name": "Number of clusters",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 8,
+            "MaxValue": 10000,
+            "MinValue": 2,
+            "AllowDecimals": false
+        },
+        {
+            "Name": "Output column name",
+            "__discriminator": "StringValueInnerInputDescription",
+            "DefaultValue": "Cluster"
+        }
+    ]
+}
