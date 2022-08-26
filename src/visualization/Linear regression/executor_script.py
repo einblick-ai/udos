@@ -9,8 +9,8 @@ for df in self.from_input(0).flatten():
 
 df = pd.concat(dfs, axis=0)
 
-X = df[attributes['features']].drop(attributes['target'], axis=1, errors="ignore")
-if params['fit intercept']:
+X = df[attributes['Features']].drop(attributes['Target'], axis=1, errors="ignore")
+if params['Fit intercept']:
     X = sm.add_constant(X, prepend=False)
 
 yield pd.concat([pd.DataFrame({"prediction": fit.predict(exog=X)}), df], axis=1)
