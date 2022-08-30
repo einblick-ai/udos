@@ -1,6 +1,6 @@
 {
     "Width": 400,
-    "Height": 300,
+    "Height": 325,
     "Description": "Performs k-means clustering on a dataset.",
     "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,

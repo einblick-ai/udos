@@ -8,5 +8,5 @@ for dfs in self.from_input(0):
     for df in dfs:
         processed = normalize(df[attributes["Features"]])
         kmeans.partial_fit(processed)
-        df[params['Output column name']] = kmeans.predict(processed) + 1
+        df.insert(0, params['Output column name'], kmeans.predict(processed) + 1)
         yield df
