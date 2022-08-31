@@ -11,7 +11,12 @@
                 "DisplayName": "input"
             }
         ],
-        "DataframeOutputModels": [],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
         "AttributeConfigGroupInputDescription": {
             "Target": {
                 "Name": "Target",
