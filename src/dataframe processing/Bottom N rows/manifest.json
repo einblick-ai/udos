@@ -2,11 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.1.1",
+    "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Select the `n` rows of a dataframe with the lowest values of the selected column.",
     "Tags": [
-        "transformation"
+        "Transformation"
     ],
     "Thumbnail": null
 }

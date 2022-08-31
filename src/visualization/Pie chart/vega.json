@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "params['title']",
+    "description": "A simple pie chart with embedded data.",
+    "data": {
+        "values": []
+    },
+    "mark": "arc",
+    "encoding": {
+        "theta": {
+            "field": "attributes['slices'][0]",
+            "type": "params['slice size type']"
+        },
+        "color": {
+            "field": "attributes['labels'][0]",
+            "type": "params['color gradient type']"
+        }
+    },
+    "config": {
+        "background": "white"
+    },
+    "view": {
+        "stroke": null
+    }
+}

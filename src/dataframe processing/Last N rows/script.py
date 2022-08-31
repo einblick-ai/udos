@@ -1,0 +1,1 @@
+df.tail(params["number of rows"])

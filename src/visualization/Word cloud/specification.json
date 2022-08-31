@@ -1,0 +1,89 @@
+{
+    "Width": 800,
+    "Height": 400,
+    "Description": "Generates a word cloud from a column of text.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "DisplayContentAtLowFidelity": true,
+    "InnerInputs": [],
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "text": {
+                "Name": "text",
+                "FromDataframe": "input",
+                "DisplayName": "text",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": false,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": true,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "# words": {
+                "DisplayName": "# words",
+                "__discriminator": "NumberRangeValueInputDescription",
+                "DefaultValue": 100,
+                "MaxValue": 1000,
+                "MinValue": 10,
+                "StepSize": 1
+            },
+            "language": {
+                "DisplayName": "language",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "en",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "en",
+                            "DisplayName": "en"
+                        },
+                        {
+                            "Key": "fr",
+                            "DisplayName": "fr"
+                        },
+                        {
+                            "Key": "es",
+                            "DisplayName": "es"
+                        },
+                        {
+                            "Key": "de",
+                            "DisplayName": "de"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "text",
+            "AttributeConfigGroupInputName": "text",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "# words",
+            "ValueInputName": "# words",
+            "__discriminator": "NumberRangeInputUIType"
+        },
+        {
+            "Id": "language",
+            "ValueInputName": "language",
+            "__discriminator": "ValueSelectorInputUIType"
+        }
+    ]
+}

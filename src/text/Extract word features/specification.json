@@ -1,0 +1,96 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "Description": "Generates an executor to extract statistics from the top-k words from text columns.\n\nOptions:\n\n* **Target**: textual column to convert\n* **Max words**: number of words to extract that will create additional columns\n* **Max ngram**: max contiguous sequence of words to consider\n* **Extractor type**: strategy to compute statistics (count or [TF/IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)) ",
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [],
+        "AttributeConfigGroupInputDescription": {
+            "Target": {
+                "Name": "Target",
+                "FromDataframe": "input",
+                "DisplayName": "Target",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": false,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "Max words": {
+                "DisplayName": "Max words",
+                "__discriminator": "NumberRangeValueInputDescription",
+                "DefaultValue": 10,
+                "MaxValue": 100,
+                "MinValue": 1,
+                "StepSize": 1
+            },
+            "Max ngram": {
+                "DisplayName": "Max ngram",
+                "__discriminator": "NumberRangeValueInputDescription",
+                "DefaultValue": 1,
+                "MaxValue": 3,
+                "MinValue": 1,
+                "StepSize": 1
+            },
+            "Extractor type": {
+                "DisplayName": "Extractor type",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "TF/IDF",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "TF/IDF",
+                            "DisplayName": "TF/IDF"
+                        },
+                        {
+                            "Key": "Count",
+                            "DisplayName": "Count"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "Target",
+            "AttributeConfigGroupInputName": "Target",
+            "When": "true",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "Max words",
+            "ValueInputName": "Max words",
+            "When": "true",
+            "Icon": "fas fa-plus",
+            "__discriminator": "NumberRangeInputUIType"
+        },
+        {
+            "Id": "Max ngram",
+            "ValueInputName": "Max ngram",
+            "When": "true",
+            "Icon": "fas fa-arrows-alt-h",
+            "__discriminator": "NumberRangeInputUIType"
+        },
+        {
+            "Id": "Extractor type",
+            "ValueInputName": "Extractor type",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "ValueSelectorInputUIType"
+        }
+    ],
+    "InnerInputs": []
+}

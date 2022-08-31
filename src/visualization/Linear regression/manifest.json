@@ -2,9 +2,12 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.1.1",
+    "CompatibleWith": "1.0.0",
     "Deprecated": false,
-    "Description": "Performs and visualizes a linear regression between two attributes.",
-    "Tags": ["visualization"],
-    "Thumbnail": "thumbnail.png"
+    "Description": "Returns the regression coefficients and p-values for a linear regression performed on the provided data.",
+    "Keywords": null,
+    "Tags": [
+        "Machine learning"
+    ],
+    "Thumbnail": ""
 }

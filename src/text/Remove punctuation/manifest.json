@@ -2,11 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "0.1.1",
+    "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Removes any punctuation characters in the specified columns.",
     "Tags": [
-        "text"
+        "Text"
     ],
     "Thumbnail": null
 }

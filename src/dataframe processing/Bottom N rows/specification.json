@@ -1,0 +1,44 @@
+{
+    "Width": 250,
+    "Height": 250,
+    "Description": "Select the `n` rows of a dataframe with the highest values of the selected column.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    },
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "Name": "column",
+            "SubLabel": "column to rank values by",
+            "__discriminator": "AttributeSelectorInnerInputDescription",
+            "FromDataframe": "input",
+            "MaxNr": 1,
+            "MinNr": 1,
+            "AllowNumeric": true,
+            "AllowStrings": false,
+            "AllowTimestamps": false,
+            "AllowBooleans": true,
+            "AllowNull": false
+        },
+        {
+            "Name": "number of rows",
+            "__discriminator": "NumberValueInnerInputDescription",
+            "DefaultValue": 10
+        }
+    ]
+}

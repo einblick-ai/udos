@@ -1,0 +1,34 @@
+{
+    "Width": 400,
+    "Height": 300,
+    "MinWidth": 100,
+    "MinHeight": 100,
+    "Description": "Find instances of character sequences in a text column and replace them with other sequences.",
+    "InputUI": [],
+    "InnerInputs": [
+        {
+            "FromDataframe": "input",
+            "Name": "find_replace",
+            "__discriminator": "FindReplaceInnerInputDescription"
+        }
+    ],
+    "AutoExecuteOnCreate": false,
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {},
+        "ValueInputDescription": {}
+    }
+}

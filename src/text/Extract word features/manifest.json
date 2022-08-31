@@ -1,0 +1,13 @@
+{
+    "AllowSynchronization": true,
+    "Author": "Benedetto Jacopo Buratti",
+    "AuthorEmail": "bb@einblick.ai",
+    "CompatibleWith": "1.0.0",
+    "Deprecated": false,
+    "Description": "Generates an executor to extract statistics from the top-k words from text columns.",
+    "Keywords": null,
+    "Tags": [
+        "Text"
+    ],
+    "Thumbnail": null
+}

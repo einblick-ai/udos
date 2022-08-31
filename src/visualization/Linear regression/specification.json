@@ -1,0 +1,78 @@
+{
+    "Width": 400,
+    "Height": 325,
+    "Description": "Returns the regression coefficients and p-values for a linear regression performed on the provided data.",
+    "AutoExecuteOnChange": true,
+    "AutoExecuteOnUpstreamChange": true,
+    "ComputationDescription": {
+        "DataframeInputModels": [
+            {
+                "Name": "input",
+                "DisplayName": "input"
+            }
+        ],
+        "DataframeOutputModels": [
+            {
+                "Name": "output",
+                "DisplayName": "output"
+            }
+        ],
+        "AttributeConfigGroupInputDescription": {
+            "Features": {
+                "Name": "Features",
+                "FromDataframe": "input",
+                "DisplayName": "Features",
+                "MaxNr": -1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            },
+            "Target": {
+                "Name": "Target",
+                "FromDataframe": "input",
+                "DisplayName": "Target",
+                "MaxNr": 1,
+                "MinNr": 1,
+                "AllowNumeric": true,
+                "AllowStrings": false,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "Fit intercept": {
+                "DisplayName": "Fit intercept",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": true
+            }
+        }
+    },
+    "InputUI": [
+        {
+            "Id": "Features",
+            "AttributeConfigGroupInputName": "Features",
+            "When": "true",
+            "Icon": "fas fa-bullseye",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "Target",
+            "AttributeConfigGroupInputName": "Target",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "AttributeSelectorInputUIType"
+        },
+        {
+            "Id": "Fit intercept",
+            "ValueInputName": "Fit intercept",
+            "When": "true",
+            "Icon": "fas fa-plus",
+            "__discriminator": "BooleanValueInputUIType"
+        }
+    ],
+    "InnerInputs": []
+}
