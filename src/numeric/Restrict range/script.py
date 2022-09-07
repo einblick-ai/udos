@@ -1,5 +1,5 @@
 if params['min'] > params['max']:
-    raise ValueError('min must cannot be more than max')
+    raise ValueError('min cannot be more than max')
 clamp = lambda value: params['max'] if value > params['max'] else params['min'] if value < params['min'] else value
 
 ds = self.from_input(0)
