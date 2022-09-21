@@ -10,6 +10,6 @@ if params['strictness'] != 0:
 else:
     outlier_column = IsolationForest(random_state=0).fit_predict(df[columns].values) # auto
 
-df.insert(0, "outlier", pandas.Series(outlier_column).replace(to_replace={-1: "yes", 1: "no"}))
+df.insert(0, "outlier", pandas.Series(outlier_column).replace(to_replace={-1: True, 1: False}))
 
 df
