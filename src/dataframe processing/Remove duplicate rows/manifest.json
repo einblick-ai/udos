@@ -6,8 +6,7 @@
     "Deprecated": false,
     "Description": "Removes all (except one) duplicate rows of a dataframe, where duplicates are determined by the values in the selected columns.",
     "IsExperimental": false,
-    "Tags": [
-        "Data cleaning"
-    ],
+    "Keywords": ["Unique"],
+    "Tags": ["Data cleaning"],
     "Thumbnail": null
 }
