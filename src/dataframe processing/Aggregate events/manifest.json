@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Generates additional columns by aggregating the data on a given date index over intervals. The end of each interval is the corresponding value in the selected date column. The values in each additional are the sums of values of the specified column over the corresponding interval.\n\n**Attributes/Parameters:**\n\n* **date**: date-like column to use as an index for the aggregation\n* **columns**: numeric attributes to aggregate\n* **group**: categorical columns to use to group\n* **intervals**: intervals on which compute the aggregation (e.g. \"30min\", \"6h\", \"1d\"); see [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#offset-aliases) for details\n* **closed**: borders of each interval to include",
+    "IsExperimental": false,
     "Tags": ["Transformation"],
     "Thumbnail": null
 }

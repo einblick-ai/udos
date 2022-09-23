@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Drops columns or rows based on % of NaNs and Infinity values.",
+    "IsExperimental": false,
     "Tags": [
         "Data cleaning"
     ],

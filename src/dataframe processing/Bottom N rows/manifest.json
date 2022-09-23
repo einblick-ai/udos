@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Select the `n` rows of a dataframe with the lowest values of the selected column.",
+    "IsExperimental": false,
     "Tags": [
         "Transformation"
     ],

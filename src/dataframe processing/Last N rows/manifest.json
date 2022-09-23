@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Returns the last N rows of a dataframe.",
+    "IsExperimental": false,
     "Tags": [
         "Transformation"
     ],

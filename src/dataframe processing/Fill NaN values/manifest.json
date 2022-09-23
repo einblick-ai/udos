@@ -6,6 +6,7 @@
     "Deprecated": false,
     "Description": "Replaces non-numeric values with a specified value.",
     "Keywords": null,
+    "IsExperimental": false,
     "Tags": [
         "Data cleaning"
     ],

@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Truncate text columns to a specified length. A length of 0 indicates no truncation.",
+    "IsExperimental": false,
     "Tags": [
         "Text"
     ],

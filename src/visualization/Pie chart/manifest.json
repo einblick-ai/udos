@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "A simple pie chart.\n\n**Slices**: the attribute determining slice sizes\n\n**Labels**: the attribute determining slice labels\n\n**Slice Size** and **Color Gradient** controls how slice sizes and color gradients are determined.\n\n### Options:\n\n- **Nominal**: unordered\n- **Ordinal**: ordered, equal spacing\n- **Quantitative**: ordered, sized\n- **Temporal**: by date\n\nClick [here](https://vega.github.io/vega-lite/docs/type.html) for more details on type options.",
+    "IsExperimental": true,
     "Tags": ["Visualization"],
     "Thumbnail": "thumbnail.png"
 }

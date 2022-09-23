@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Generates an executor to extract statistics from the top-k words from text columns.",
+    "IsExperimental": true,
     "Keywords": null,
     "Tags": [
         "Text"

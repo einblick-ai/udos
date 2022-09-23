@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Removes any punctuation characters in the specified columns.",
+    "IsExperimental": false,
     "Tags": [
         "Text"
     ],

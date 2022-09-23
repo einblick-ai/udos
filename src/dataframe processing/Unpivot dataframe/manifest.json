@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Unpivot a DataFrame from wide to long format, converting a dataframe with many columns to one with few.",
+    "IsExperimental": true,
     "Keywords": [
         "Melt"
     ],

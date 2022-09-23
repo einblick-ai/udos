@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Negates boolean (true/false) columns.",
+    "IsExperimental": false,
     "Tags": [
         "Transformation"
     ],

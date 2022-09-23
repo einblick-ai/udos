@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Extract information such as the year, month, etc. from the date/time columns of a dataframe.",
+    "IsExperimental": false,
     "Tags": [
         "Data cleaning"
     ],

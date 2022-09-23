@@ -5,6 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Performs k-means clustering on a dataset.",
+    "IsExperimental": true,
     "Keywords": null,
     "Tags": [
         "Machine learning"
