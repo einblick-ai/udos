@@ -5,7 +5,7 @@
     "CompatibleWith": "1.0.0",
     "Deprecated": false,
     "Description": "Returns the regression coefficients and p-values for a linear regression performed on the provided data.",
-    "IsExperimental": true,
+    "IsExperimental": false,
     "Keywords": null,
     "Tags": [
         "Machine learning"
