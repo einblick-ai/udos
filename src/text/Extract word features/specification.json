@@ -36,7 +36,7 @@
                 "DisplayName": "Max words",
                 "__discriminator": "NumberRangeValueInputDescription",
                 "DefaultValue": 10,
-                "MaxValue": 100,
+                "MaxValue": 500,
                 "MinValue": 1,
                 "StepSize": 1
             },
