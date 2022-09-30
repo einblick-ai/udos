@@ -2,9 +2,10 @@
     "AllowSynchronization": true,
     "Author": "Benedetto J. Buratti",
     "AuthorEmail": "bb@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Drops columns or rows based on % of NaNs and Infinity values.",
+    "IsExperimental": false,
     "Tags": [
         "Data cleaning"
     ],

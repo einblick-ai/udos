@@ -2,9 +2,10 @@
     "AllowSynchronization": true,
     "Author": "Benedetto Buratti",
     "AuthorEmail": "bb@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Removes all (except one) duplicate rows of a dataframe, where duplicates are determined by the values in the selected columns.",
+    "IsExperimental": false,
     "Tags": [
         "Data cleaning"
     ],

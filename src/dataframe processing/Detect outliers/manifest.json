@@ -2,10 +2,11 @@
     "AllowSynchronization": true,
     "Author": "Benedetto Buratti",
     "AuthorEmail": "bb@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Uses the IsolationForest algorithm to detect outliers in a dataset using the specified columns. A new *outlier* column will be created.",
     "Keywords": null,
+    "IsExperimental": false,
     "Tags": [
         "Data cleaning"
     ],

@@ -2,9 +2,10 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
-    "Deprecated": false,
+    "CompatibleWith": "1.0.1",
+    "Deprecated": true,
     "Description": "For each category in `categories`, a 1D box plot will be produced using the corresponding values in `values`.\n\nBy default, the whiskers of the box plot reach until up to 1.5 times the IQR, with points outside this range being indicated as outliers. This factor is adjustable through the `extent` option. Set `extent` to `min-max` to make the whiskers cover the full range of the data.",
+    "IsExperimental": true,
     "Tags": ["Visualization"],
     "Thumbnail": "thumbnail.png"
 }

@@ -2,9 +2,10 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Performs k-means clustering on a dataset.",
+    "IsExperimental": false,
     "Keywords": null,
     "Tags": [
         "Machine learning"

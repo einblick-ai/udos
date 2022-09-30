@@ -2,9 +2,10 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Removes a specified prefix from all rows in the specified text columns.",
+    "IsExperimental": false,
     "Tags": [
         "Text"
     ],

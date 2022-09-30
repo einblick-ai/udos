@@ -2,9 +2,10 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Rounds numbers to the specified number of decimal places. Negative numbers round before the decimal place (e.g. -3 rounds to the nearest thousand).",
+    "IsExperimental": false,
     "Tags": [
         "Numeric"
     ],
