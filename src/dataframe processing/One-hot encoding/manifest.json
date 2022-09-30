@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Performs one-hot encoding (also known as dummification) on a column.",
     "IsExperimental": false,

@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Creates new columns (max 100) by splitting the specified text columns by a given delimiter. Regex is supported.",
     "IsExperimental": false,

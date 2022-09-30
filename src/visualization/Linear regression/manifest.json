@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Wesley Runnels",
     "AuthorEmail": "wr@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Returns the regression coefficients and p-values for a linear regression performed on the provided data.",
     "IsExperimental": false,

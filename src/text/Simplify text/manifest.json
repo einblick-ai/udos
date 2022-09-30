@@ -2,7 +2,7 @@
     "AllowSynchronization": true,
     "Author": "Benedetto Buratti",
     "AuthorEmail": "bb@einblick.ai",
-    "CompatibleWith": "1.0.0",
+    "CompatibleWith": "1.0.1",
     "Deprecated": false,
     "Description": "Provides the following options for simplifying text columns:\n - **Casing**: convert a column to uppercase or lowercase\n - **Remove stop words**: remove uninformative (\"stop\") words (e.g. `the`, `is`)\n - **Stem words**: remove endings from words to produce stem roots (e.g. `singing` to `sing`)\n - **Remove punctuation**\n - **Sort alphabetically**: sort all words in a column alphabetically\n - **Normalize**: apply NFC normalization to the text\n - **Truncate length**: number of characters to keep when truncating. Use 0 to avoid truncation",
     "IsExperimental": false,
