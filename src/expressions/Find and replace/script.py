@@ -9,7 +9,7 @@ findReplacePairs = params["find_replace"]["find_replace"]["find_replace_pairs"]
 
 
 validPairs = [p for p in findReplacePairs if len(p['find_keyword']) > 0]
-replaceCalls = [f"replace({p['find_keyword']}, {p['replace_keyword']})" for p in validPairs]
+replaceCalls = [str.format("replace(\"{}\", \"{}\")", p['find_keyword'], p['replace_keyword']) for p in validPairs]
 findReplaceChain = ".".join(replaceCalls)
 
 expression = f"[{columnToSearch}].{findReplaceChain}"
