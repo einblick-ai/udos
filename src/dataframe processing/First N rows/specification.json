@@ -2,7 +2,7 @@
     "Width": 250,
     "Height": 150,
     "Description": "Returns the first N rows of a dataframe.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [

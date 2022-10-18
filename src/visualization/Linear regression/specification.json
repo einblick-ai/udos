@@ -2,7 +2,7 @@
     "Width": 400,
     "Height": 325,
     "Description": "Returns the regression coefficients and p-values for a linear regression performed on the provided data.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [

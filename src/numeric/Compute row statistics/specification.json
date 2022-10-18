@@ -2,7 +2,7 @@
     "Width": 375,
     "Height": 325,
     "Description": "Computes a statistic (e.g. *max*, *average*) for each row of a dataframe.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [

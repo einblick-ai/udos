@@ -2,7 +2,7 @@
     "Width": 300,
     "Height": 300,
     "Description": "Truncate text columns to a specified length. A length of 0 indicates no truncation.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
