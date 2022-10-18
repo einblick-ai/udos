@@ -6,6 +6,7 @@
     "Deprecated": false,
     "Description": "Assign rows of a dataframe to bins based on specified conditions.",
     "IsExperimental": false,
+    "Keywords": null,
     "Tags": [
         "Transformation"
     ],
