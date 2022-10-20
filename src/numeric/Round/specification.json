@@ -2,7 +2,8 @@
     "Width": 250,
     "Height": 225,
     "Description": "Rounds numbers to the specified number of decimal places. Negative numbers round before the decimal place (e.g. -3 rounds to the nearest thousand).",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
+    "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
             {

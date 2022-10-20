@@ -2,7 +2,7 @@
     "Width": 300,
     "Height": 300,
     "Description": "Removes a specified prefix from all rows in the specified text columns.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [

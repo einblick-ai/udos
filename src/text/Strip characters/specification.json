@@ -2,7 +2,7 @@
     "Width": 325,
     "Height": 325,
     "Description": "Removes text from either or both ends of a string column. Strips whitespace if no characters are provided, but can strip other provided characters as well.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [

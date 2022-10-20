@@ -2,7 +2,7 @@
     "Width": 250,
     "Height": 200,
     "Description": "Select the `n` rows of a dataframe with the highest values of the selected column.",
-    "AutoExecuteOnChange": true,
+    "AutoExecuteOnChange": false,
     "AutoExecuteOnUpstreamChange": true,
     "ComputationDescription": {
         "DataframeInputModels": [
