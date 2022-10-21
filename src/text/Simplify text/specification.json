@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "columns",
+            "DisplayName": "Columns",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,
@@ -36,6 +37,7 @@
         },
         {
             "Name": "casing",
+            "DisplayName": "Casing",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
                 "none",
@@ -47,36 +49,42 @@
         },
         {
             "Name": "remove stop words",
-            "SubLabel": "e.g. 'the', 'is', 'a'",
+            "DisplayName": "Remove stop words",
+            "SubLabel": "E.g. 'the', 'is', 'a'",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "stem words",
-            "SubLabel": "e.g. 'stopping' becomes 'stop'",
+            "DisplayName": "Stem words",
+            "SubLabel": "E.g. 'stopping' becomes 'stop'",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "remove punctuation",
-            "SubLabel": "punctuation characters include: '!\"#$%&*+,-./:;<=>?@\\[](){}^_`~",
+            "DisplayName": "Remove punctuation",
+            "SubLabel": "Punctuation characters include: '!\"#$%&*+,-./:;<=>?@\\[](){}^_`~",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "sort alphabetically",
-            "SubLabel": "e.g. 'United States' becomes 'States United'",
+            "DisplayName": "Sort alphabetically",
+            "SubLabel": "E.g. 'United States' becomes 'States United'",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "normalize",
-            "SubLabel": "apply NFC normalization",
+            "DisplayName": "Normalize",
+            "SubLabel": "Apply NFC normalization",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         },
         {
             "Name": "truncate length",
+            "DisplayName": "Truncate length",
             "SubLabel": "0 indicates no truncation",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 0,

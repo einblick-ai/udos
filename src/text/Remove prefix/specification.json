@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "columns",
+            "DisplayName": "Columns",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,
@@ -36,6 +37,7 @@
         },
         {
             "Name": "prefix",
+            "DisplayName": "Prefix",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": ""
         }

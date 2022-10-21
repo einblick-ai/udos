@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "column",
+            "DisplayName": "Column",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": 1,
@@ -36,7 +37,8 @@
         },
         {
             "Name": "append",
-            "SubLabel": "whether to append to original dataframe",
+            "DisplayName": "Append",
+            "SubLabel": "Whether to append to original dataframe",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": true
         }

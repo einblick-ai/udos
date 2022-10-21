@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "columns to strip",
+            "DisplayName": "Columns to strip",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,
@@ -36,12 +37,14 @@
         },
         {
             "Name": "characters",
-            "SubLabel": "e.g. '.com'",
+            "DisplayName": "Characters",
+            "SubLabel": "E.g. '.com'",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": ""
         },
         {
             "Name": "side(s) to strip",
+            "DisplayName": "Side(s) to strip",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
                 "both",

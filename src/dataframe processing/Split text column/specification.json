@@ -24,7 +24,8 @@
     "InnerInputs": [
         {
             "Name": "columns",
-            "SubLabel": "text columns containing delimiters to split by",
+            "DisplayName": "Columns",
+            "SubLabel": "Text columns containing delimiters to split by",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,
@@ -37,13 +38,15 @@
         },
         {
             "Name": "delimiter",
-            "SubLabel": "e.g. '-', '[0-9]+'",
+            "DisplayName": "Delimiter",
+            "SubLabel": "E.g. '-', '[0-9]+'",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": ""
         },
         {
             "Name": "use regex",
-            "SubLabel": "whether to parse the delimiter as a regular expression",
+            "DisplayName": "Use regex",
+            "SubLabel": "Whether to parse the delimiter as a regular expression",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": false
         }
