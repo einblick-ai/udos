@@ -23,7 +23,8 @@
     "InputUI": [],
     "InnerInputs": [
         {
-            "Name": "Columns",
+            "Name": "columns",
+            "DisplayName": "Columns",
             "SubLabel": "Numeric columns to sum over",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
@@ -36,7 +37,8 @@
             "AllowNull": false
         },
         {
-            "Name": "Date",
+            "Name": "date",
+            "DisplayName": "Date",
             "SubLabel": "Date column containing intervals to sum over",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
@@ -49,7 +51,8 @@
             "AllowNull": false
         },
         {
-            "Name": "Group",
+            "Name": "group",
+            "DisplayName": "Group",
             "SubLabel": "Categorical column to group over",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
@@ -62,26 +65,29 @@
             "AllowNull": false
         },
         {
-            "Name": "Aggregation function",
+            "Name": "aggregation function",
+            "DisplayName": "Aggregation function",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
-                "Sum",
-                "Mean",
-                "Min",
-                "Max",
-                "Median"
+                "sum",
+                "mean",
+                "min",
+                "max",
+                "median"
             ],
             "MaxNr": 1,
             "MinNr": 1
         },
         {
-            "Name": "Intervals",
+            "Name": "intervals",
+            "DisplayName": "Intervals",
             "SubLabel": "E.g. 30min;1h",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": "30min;1h"
         },
         {
-            "Name": "Closed",
+            "Name": "closed",
+            "DisplayName": "Closed",
             "SubLabel": "Which ends of each interval to include (recommended: 'right')",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
