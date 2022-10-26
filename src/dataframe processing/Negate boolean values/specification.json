@@ -24,11 +24,13 @@
     "InnerInputs": [
         {
             "Name": "in place",
+            "DisplayName": "In place",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": true
         },
         {
             "Name": "columns",
+            "DisplayName": "Columns",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,

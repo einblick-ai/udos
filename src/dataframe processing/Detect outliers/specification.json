@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "columns",
+            "DisplayName": "Columns",
             "SubLabel": "Columns to use to determine outliers",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
@@ -37,6 +38,7 @@
         },
         {
             "Name": "strictness",
+            "DisplayName": "Strictness",
             "SubLabel": "How strictly to determine outliers. Higher values indicate a more strict threshold. Use 0 to use the default value.",
             "__discriminator": "NumberRangeInnerInputDescription",
             "DefaultValue": 0,

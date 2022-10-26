@@ -24,7 +24,8 @@
     "InnerInputs": [
         {
             "Name": "columns",
-            "SubLabel": "which columns to compare when determining duplicate rows",
+            "DisplayName": "Columns",
+            "SubLabel": "Which columns to compare when determining duplicate rows",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,

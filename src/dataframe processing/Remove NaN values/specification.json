@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "axis",
+            "DisplayName": "Axis",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
                 "drop rows",
@@ -34,16 +35,19 @@
         },
         {
             "Name": "drop NaN",
+            "DisplayName": "Drop NaN",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": true
         },
         {
             "Name": "drop infinity",
+            "DisplayName": "Drop infinity",
             "__discriminator": "CheckboxInnerInputDescription",
             "DefaultValue": true
         },
         {
             "Name": "min % valid values",
+            "DisplayName": "Min % valid values",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 20,
             "MaxValue": 100,

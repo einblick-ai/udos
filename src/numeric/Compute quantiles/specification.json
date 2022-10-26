@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "column",
+            "DisplayName": "Column",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": 1,
@@ -36,6 +37,7 @@
         },
         {
             "Name": "number of quantiles",
+            "DisplayName": "Number of quantiles",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 10,
             "MaxValue": 1000,
@@ -44,6 +46,7 @@
         },
         {
             "Name": "output column name",
+            "DisplayName": "Output column name",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": ""
         }

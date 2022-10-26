@@ -24,6 +24,7 @@
     "InnerInputs": [
         {
             "Name": "number of rows",
+            "DisplayName": "Number of rows",
             "__discriminator": "NumberValueInnerInputDescription",
             "DefaultValue": 10,
             "MinValue": 1,

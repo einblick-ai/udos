@@ -24,7 +24,8 @@
     "InnerInputs": [
         {
             "Name": "columns",
-            "SubLabel": "which numeric columns to compute the statistic over",
+            "DisplayName": "Columns",
+            "SubLabel": "Which numeric columns to compute the statistic over",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,
@@ -37,6 +38,7 @@
         },
         {
             "Name": "statistic",
+            "DisplayName": "Statistic",
             "__discriminator": "OptionSelectorInnerInputDescription",
             "Options": [
                 "mean",
@@ -50,6 +52,7 @@
         },
         {
             "Name": "output column name",
+            "DisplayName": "Output column name",
             "__discriminator": "StringValueInnerInputDescription",
             "DefaultValue": ""
         }

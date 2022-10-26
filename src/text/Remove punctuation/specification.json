@@ -24,7 +24,8 @@
     "InnerInputs": [
         {
             "Name": "columns",
-            "SubLabel": "punctuation characters include: '!\"#$%&*+,-./:;<=>?@\\[](){}^_`~",
+            "DisplayName": "Columns",
+            "SubLabel": "Punctuation characters include: '!\"#$%&*+,-./:;<=>?@\\[](){}^_`~",
             "__discriminator": "AttributeSelectorInnerInputDescription",
             "FromDataframe": "input",
             "MaxNr": -1,
