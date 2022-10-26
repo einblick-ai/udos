@@ -1,9 +1,9 @@
 {
     "Width": 300,
-    "Height": 350,
-    "Description": "Performs one-hot encoding (also known as dummification) on a column.",
+    "Height": 250,
+    "Description": "Performs one-hot encoding on categorical features in a dataframe. The encoder can then be applied to other datasets using the returned executor. See [sklearn's documentation](https://scikit-learn.org/0.24/modules/generated/sklearn.preprocessing.OneHotEncoder.html?highlight=onehot#sklearn.preprocessing.OneHotEncoder) for further information.\n\nParameters:\n- **Columns**: categorical columns to encode\n- **Drop method**: whether to drop a category from each column to prevent collinearity\n- **Handle unknown method**: behavior when a previously trained encoder encounters a new category\n- **Keep original columns**: whether the original categorical columns should be kept\n\n",
     "AutoExecuteOnChange": false,
-    "AutoExecuteOnUpstreamChange": true,
+    "AutoExecuteOnUpstreamChange": false,
     "ComputationDescription": {
         "DataframeInputModels": [
             {
@@ -17,30 +17,94 @@
                 "DisplayName": "output"
             }
         ],
-        "AttributeConfigGroupInputDescription": {},
-        "ValueInputDescription": {}
+        "AttributeConfigGroupInputDescription": {
+            "Columns": {
+                "Name": "Columns",
+                "DisplayName": "Columns",
+                "FromDataframe": "input",
+                "MaxNr": -1,
+                "MinNr": 1,
+                "AllowNumeric": false,
+                "AllowStrings": true,
+                "AllowTimestamps": false,
+                "AllowBooleans": false,
+                "AllowNull": false
+            }
+        },
+        "ValueInputDescription": {
+            "Drop method": {
+                "Name": "Drop method",
+                "DisplayName": "Drop method",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "None",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "None",
+                            "DisplayName": "None"
+                        },
+                        {
+                            "Key": "Drop first category",
+                            "DisplayName": "Drop first category"
+                        }
+                    ]
+                }
+            },
+            "Handle unknown method": {
+                "Name": "Handle unknown method",
+                "DisplayName": "Handle unknown method",
+                "__discriminator": "OptionsValueInputDescription",
+                "DefaultValue": "Ignore",
+                "Options": {
+                    "true": [
+                        {
+                            "Key": "Ignore",
+                            "DisplayName": "Ignore"
+                        },
+                        {
+                            "Key": "Error",
+                            "DisplayName": "Error"
+                        }
+                    ]
+                }
+            },
+            "Keep original columns": {
+                "Name": "Keep original columns",
+                "DisplayName": "Keep original columns",
+                "__discriminator": "BooleanValueInputDescription",
+                "DefaultValue": true
+            }
+        }
     },
-    "InputUI": [],
-    "InnerInputs": [
+    "InputUI": [
         {
-            "Name": "column",
-            "DisplayName": "Column",
-            "__discriminator": "AttributeSelectorInnerInputDescription",
-            "FromDataframe": "input",
-            "MaxNr": 1,
-            "MinNr": 1,
-            "AllowNumeric": false,
-            "AllowStrings": true,
-            "AllowTimestamps": false,
-            "AllowBooleans": false,
-            "AllowNull": false
+            "Id": "Columns",
+            "AttributeConfigGroupInputName": "Columns",
+            "When": "true",
+            "Icon": "fas fa-tag",
+            "__discriminator": "AttributeSelectorInputUIType"
         },
         {
-            "Name": "append",
-            "DisplayName": "Append",
-            "SubLabel": "Whether to append to original dataframe",
-            "__discriminator": "CheckboxInnerInputDescription",
-            "DefaultValue": true
+            "Id": "Drop method",
+            "ValueInputName": "Drop method",
+            "When": "true",
+            "Icon": "fas fa-trash-alt",
+            "__discriminator": "ValueSelectorInputUIType"
+        },
+        {
+            "Id": "Handle unknown method",
+            "ValueInputName": "Handle unknown method",
+            "When": "true",
+            "Icon": "fas fa-question",
+            "__discriminator": "ValueSelectorInputUIType"
+        },
+        {
+            "Id": "Keep original columns",
+            "ValueInputName": "Keep original columns",
+            "When": "true",
+            "Icon": "fas fa-columns",
+            "__discriminator": "BooleanValueInputUIType"
         }
-    ]
+    ],
+    "InnerInputs": []
 }

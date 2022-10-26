@@ -4,8 +4,13 @@
     "AuthorEmail": "wr@einblick.ai",
     "CompatibleWith": "1.0.1",
     "Deprecated": false,
-    "Description": "Performs one-hot encoding (also known as dummification) on a column.",
+    "Description": "Performs one-hot encoding on categorical features in a dataframe. The encoder can then be applied to other datasets using the returned executor. See [sklearn's documentation](https://scikit-learn.org/0.24/modules/generated/sklearn.preprocessing.OneHotEncoder.html?highlight=onehot#sklearn.preprocessing.OneHotEncoder) for further information.\n\nParameters:\n- **Columns**: categorical columns to encode\n- **Drop method**: whether to drop a category from each column to prevent collinearity\n- **Handle unknown method**: behavior when a previously trained encoder encounters a new category\n- **Keep original columns**: whether the original categorical columns should be kept\n\n",
     "IsExperimental": false,
+    "Keywords": [
+        "dummification",
+        "dummy",
+        "onehot"
+    ],
     "Tags": [
         "Data cleaning"
     ],
